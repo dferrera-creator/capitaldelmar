@@ -251,7 +251,7 @@ export function FootballFieldChart({ data, className }: Props) {
 
               {/* Real range bar */}
               <Bar dataKey="barWidth" stackId="a" radius={[0, 4, 4, 0]} isAnimationActive={!prefersReducedMotion}>
-                {chartRows.map((row, i) => (
+                {chartRows.map((row) => (
                   <Cell
                     key={row.id}
                     fill={SCENARIO_COLORS[scenario]}

@@ -1,38 +1,49 @@
 import { NextResponse } from 'next/server'
+import { prisma } from '@/lib/prisma'
 
-export const revalidate = 3600 // 1 hour
+// Fallback illustrative rate if no real rate is available
+const FALLBACK_RATE = 0.1025 // 10.25% — illustrative, not real-time
 
-interface CetesResponse {
-  rate: number
-  term: string
-  date: string
-  source: string
-  status: 'live' | 'cached' | 'fallback'
-}
-
-export async function GET(): Promise<NextResponse<CetesResponse>> {
+export async function GET() {
   try {
-    // In a real implementation, query the DB for a cached rate fetched from Banxico.
-    // For now, return a fallback value so the page always loads.
-    // Replace this with a Prisma query once the CetesRate model is available.
-    const fallback: CetesResponse = {
-      rate: 0,
-      term: '28d',
-      date: new Date().toISOString().split('T')[0],
-      source: 'banxico',
-      status: 'fallback',
+    // Try to get a cached rate from the DB (valid for today)
+    const cached = await prisma.cetesRate.findFirst({
+      where: {
+        term: '28d',
+        OR: [
+          { validUntil: { gte: new Date() } },
+          { validUntil: null },
+        ],
+      },
+      orderBy: { fetchedAt: 'desc' },
+    })
+
+    if (cached) {
+      return NextResponse.json({
+        rate: Number(cached.rate),
+        term: cached.term,
+        source: cached.source,
+        fetchedAt: cached.fetchedAt.toISOString(),
+        cached: true,
+      })
     }
 
-    return NextResponse.json(fallback, {
-      headers: {
-        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
-      },
+    // If no cached value, return fallback with clear labeling
+    return NextResponse.json({
+      rate: FALLBACK_RATE,
+      term: '28d',
+      source: 'Valor de referencia ilustrativo — fuente Banxico pendiente de integración',
+      fetchedAt: new Date().toISOString(),
+      cached: false,
+      illustrative: true,
     })
   } catch (err) {
-    console.error('[/api/cetes] Error:', err)
-    return NextResponse.json(
-      { rate: 0, term: '28d', date: new Date().toISOString().split('T')[0], source: 'banxico', status: 'fallback' },
-      { status: 200 },
-    )
+    console.error('[api/cetes] Error:', err)
+    return NextResponse.json({
+      rate: FALLBACK_RATE,
+      term: '28d',
+      source: 'Valor de referencia ilustrativo',
+      error: true,
+    })
   }
 }

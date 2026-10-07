@@ -337,7 +337,7 @@ export default function SimuladorPage() {
                     width={70}
                   />
                   <Tooltip
-                    formatter={(v: number) => [formatCurrency(v)]}
+                    formatter={(v) => [formatCurrency(Number(v))]}
                     labelFormatter={(l) => `Mes ${l}`}
                   />
                   <Legend />

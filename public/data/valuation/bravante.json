@@ -1,0 +1,122 @@
+{
+  "slug": "bravante",
+  "status": "ILUSTRATIVO",
+  "version": "1.0.0",
+  "modelDate": "2024-01-01",
+  "source": "Modelo interno Del Mar Capital – datos ilustrativos",
+  "currency": "MXN",
+  "reconciled": 5910000,
+  "wacc": 0.2138,
+  "irr": 0.205,
+  "moic": 1.62,
+  "paybackMonths": 36,
+  "entryPrice": 1000000,
+  "scenarios": {
+    "bear": {
+      "label": "Conservador",
+      "reconciled": 4800000,
+      "irr": 0.15,
+      "moic": 1.38
+    },
+    "base": {
+      "label": "Base",
+      "reconciled": 5910000,
+      "irr": 0.205,
+      "moic": 1.62
+    },
+    "bull": {
+      "label": "Optimista",
+      "reconciled": 7200000,
+      "irr": 0.28,
+      "moic": 1.95
+    }
+  },
+  "methods": [
+    {
+      "id": "dcf_multiples",
+      "label": "DCF con múltiplo de salida",
+      "weight": 0.35,
+      "min": 5200000,
+      "max": 6200000,
+      "base": 5630000,
+      "description": "Descuento de flujos libre a equity con múltiplo EV/EBITDA de salida de 4x",
+      "assumptions": {
+        "wacc": 0.2138,
+        "exitMultiple": 4,
+        "growthRate": 0.08,
+        "terminalGrowth": 0.03
+      }
+    },
+    {
+      "id": "dcf_runoff",
+      "label": "DCF run-off (sin valor terminal)",
+      "weight": 0.2,
+      "min": 3100000,
+      "max": 3800000,
+      "base": 3440000,
+      "description": "Solo flujos durante el periodo de inversión, sin valor residual",
+      "assumptions": {
+        "wacc": 0.2138,
+        "terminalValue": 0
+      }
+    },
+    {
+      "id": "ev_ebitda",
+      "label": "Múltiplo EV/EBITDA",
+      "weight": 0.25,
+      "min": 5330000,
+      "max": 8880000,
+      "base": 6500000,
+      "description": "Rango de 3x a 5x sobre EBITDA base de operación",
+      "assumptions": {
+        "multipleMin": 3,
+        "multipleMax": 5,
+        "ebitdaBase": 1776000
+      }
+    },
+    {
+      "id": "ev_revenue",
+      "label": "Múltiplo EV/Ingresos",
+      "weight": 0.1,
+      "min": 4090000,
+      "max": 8190000,
+      "base": 5500000,
+      "description": "Rango de 1x a 2x sobre Ingreso Del Mar (no venta total)",
+      "assumptions": {
+        "multipleMin": 1,
+        "multipleMax": 2,
+        "revenueBase": 4090000,
+        "note": "Base es Ingreso Del Mar, no venta total del activo"
+      }
+    },
+    {
+      "id": "comp_key",
+      "label": "Valor por llave comparable",
+      "weight": 0.1,
+      "min": 7760000,
+      "max": 11640000,
+      "base": 9200000,
+      "description": "Transacciones comparables de propiedades similares en Guadalajara",
+      "assumptions": {
+        "compsSource": "ILUSTRATIVO – fuente pendiente de validación"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "id": "wacc_above_irr",
+      "pass": false,
+      "message": "TIR (20.5%) por debajo del WACC (21.38%) en escenario base – riesgo de destrucción de valor"
+    },
+    {
+      "id": "all_methods_present",
+      "pass": true,
+      "message": "Todos los métodos requeridos presentes"
+    },
+    {
+      "id": "weights_sum",
+      "pass": true,
+      "message": "Ponderaciones suman 100%"
+    }
+  ]
+}

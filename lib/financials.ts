@@ -34,6 +34,47 @@ export interface ScenarioData {
   moic: number | null
   ebitdaAnio1: number | null
   vpn: number | null
+  retornoTotal?: number | null
+  flujoAcumulado5a?: number | null
+}
+
+export interface CashFlowRow {
+  year: number
+  flujoLibre: number
+  flujoAcumulado: number
+  rendimientoSobreInversion: number
+}
+
+export interface ReturnCascade {
+  inversion: number
+  efectivo5a: number
+  plusvalia: number
+  valorTotal: number
+  retornoTotal: number
+  moic: number
+  nota: string
+}
+
+export interface InvestmentBreakdown {
+  precioCompra: number
+  remodelacion: number
+  gastosCierre: number
+  total: number
+  hipoteca: number
+  listPrice?: number
+  descuentoVsListaPct?: number
+}
+
+export interface SensibilidadInmueble {
+  valores: number[]
+  retornoAnualizadoPct: Record<string, number[]>
+  retornoTotalPct?: Record<string, number[]>
+}
+
+export interface SupuestoRiesgo {
+  tema: string
+  supuesto: string
+  queFalta: string
 }
 
 export interface StressTest {
@@ -74,7 +115,7 @@ export interface FinancialDownload {
 
 export interface FinancialData {
   slug: string
-  status: 'ILUSTRATIVO' | 'REAL'
+  status: string
   version: string
   modelDate: string
   source: string
@@ -90,6 +131,19 @@ export interface FinancialData {
   stressTests: StressTest[]
   unitEconomics: UnitEconomics
   assumptions: FinancialAssumptions
+  // Optional enriched fields (Canadian Resorts and future projects)
+  cashFlowByYear?: CashFlowRow[]
+  returnCascade?: ReturnCascade
+  investment?: InvestmentBreakdown
+  sensibilidadInmueble?: SensibilidadInmueble
+  supuestosRiesgo?: SupuestoRiesgo[]
+  ingresos2025Actuales?: number
+  propertyEstimated?: number
+  propertyValueStatus?: string
+  startDate?: string
+  startDateStatus?: string
+  suiteCount?: number
+  suitesRentaCorta?: number
 }
 
 export function getFinancials(slug: string): FinancialData | null {

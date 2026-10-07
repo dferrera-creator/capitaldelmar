@@ -1,0 +1,212 @@
+{
+  "slug": "canadian-resorts",
+  "status": "ESTIMADO",
+  "version": "3.0.0",
+  "modelDate": "2026-10-07",
+  "source": "Canadian_Resorts_v3_Valuacion.xlsx / 13_ESCENARIO_VALOR",
+  "currency": "MXN",
+  "activeScenario": "base",
+  "investment": {
+    "precioCompra": 50000000,
+    "remodelacion": 2000000,
+    "gastosCierre": 2000000,
+    "total": 54000000,
+    "hipoteca": 0,
+    "listPrice": 84000000,
+    "descuentoVsListaPct": 40.5
+  },
+  "propertyEstimated": 80000000,
+  "propertyValueStatus": "por_confirmar",
+  "startDate": "2027-01-01",
+  "startDateStatus": "por_confirmar",
+  "suiteCount": 22,
+  "suitesRentaCorta": 18,
+  "ingresos2025Actuales": 7600000,
+  "download": {
+    "url": "/agendar",
+    "requiresAuth": true,
+    "label": "Solicitar modelo completo"
+  },
+  "kpis": {
+    "ventaTotalAnio1": 14890000,
+    "ingresoDelMarAnio1": 14890000,
+    "ebitdaAnio1": 6010000,
+    "ebitdaAnio5": 8370000,
+    "ebitdaAcumulado60m": 23820000,
+    "fcffNormalizado": 3870000,
+    "valorContrato": 50000000,
+    "evEbitda": null,
+    "valorPorLlave": 1300000,
+    "tir": 0.157,
+    "vpnWacc": 28490000,
+    "moic": 1.92,
+    "deficitMaximoCaja": null,
+    "dscrMinimo": null
+  },
+  "plByYear": [
+    { "year": 1, "ventaTotal": 14890000, "ingresoDelMar": 14890000, "ebitda": 6010000, "ebitdaMargin": 0.4036 },
+    { "year": 2, "ventaTotal": 16030000, "ingresoDelMar": 16030000, "ebitda": 6540000, "ebitdaMargin": 0.408 },
+    { "year": 3, "ventaTotal": 17240000, "ingresoDelMar": 17240000, "ebitda": 7110000, "ebitdaMargin": 0.4124 },
+    { "year": 4, "ventaTotal": 18530000, "ingresoDelMar": 18530000, "ebitda": 7720000, "ebitdaMargin": 0.4166 },
+    { "year": 5, "ventaTotal": 19920000, "ingresoDelMar": 19920000, "ebitda": 8370000, "ebitdaMargin": 0.42 }
+  ],
+  "cashFlowByYear": [
+    { "year": 1, "flujoLibre": 3870000, "flujoAcumulado": 3870000, "rendimientoSobreInversion": 0.072 },
+    { "year": 2, "flujoLibre": 4440000, "flujoAcumulado": 8310000, "rendimientoSobreInversion": 0.082 },
+    { "year": 3, "flujoLibre": 4790000, "flujoAcumulado": 13100000, "rendimientoSobreInversion": 0.089 },
+    { "year": 4, "flujoLibre": 5160000, "flujoAcumulado": 18260000, "rendimientoSobreInversion": 0.096 },
+    { "year": 5, "flujoLibre": 5560000, "flujoAcumulado": 23820000, "rendimientoSobreInversion": 0.103 }
+  ],
+  "returnCascade": {
+    "inversion": 54000000,
+    "efectivo5a": 23820000,
+    "plusvalia": 26000000,
+    "valorTotal": 103820000,
+    "retornoTotal": 0.923,
+    "moic": 1.923,
+    "nota": "La ganancia del inmueble todavía no es efectivo. Solo se convierte en dinero si se vende, y entonces habría que descontar costos de venta e impuestos, que no están incluidos."
+  },
+  "scenarios": {
+    "bear": {
+      "label": "Conservador",
+      "description": "¿Y si el plan funciona a medias? Ocupación 46%, $1,854/noche año 1.",
+      "tir": 0.123,
+      "moic": 1.72,
+      "ebitdaAnio1": 3400000,
+      "vpn": 15310000,
+      "retornoTotal": 0.725,
+      "flujoAcumulado5a": 13100000
+    },
+    "base": {
+      "label": "Base",
+      "description": "¿Qué se espera si el plan funciona? Ocupación 60%, $2,310/noche año 1.",
+      "tir": 0.157,
+      "moic": 1.92,
+      "ebitdaAnio1": 6010000,
+      "vpn": 28490000,
+      "retornoTotal": 0.923,
+      "flujoAcumulado5a": 23820000
+    },
+    "bull": {
+      "label": "Optimista",
+      "description": "¿Y si el plan funciona mejor de lo esperado? Ocupación 73%, $2,782/noche año 1.",
+      "tir": 0.197,
+      "moic": 2.17,
+      "ebitdaAnio1": 9200000,
+      "vpn": 44350000,
+      "retornoTotal": 1.166,
+      "flujoAcumulado5a": 36980000
+    }
+  },
+  "stressTests": [
+    {
+      "id": "sin_cambios",
+      "label": "Sin cambios (hotel actual)",
+      "revparImpact": -0.463,
+      "description": "Hotel sigue operando como hoy. Ingresos 2025: $7.6M. Sin plan de renta corta.",
+      "tir": 0.103,
+      "moic": 1.61
+    },
+    {
+      "id": "conservador",
+      "label": "Conservador",
+      "revparImpact": -0.233,
+      "description": "Plan funciona a medias: 46% ocupación, $1,854/noche.",
+      "tir": 0.123,
+      "moic": 1.72
+    },
+    {
+      "id": "base_case",
+      "label": "Base",
+      "revparImpact": 0,
+      "description": "Supuestos centrales: 60% ocupación, $2,310/noche.",
+      "tir": 0.157,
+      "moic": 1.92
+    },
+    {
+      "id": "optimista",
+      "label": "Optimista",
+      "revparImpact": 0.204,
+      "description": "Plan supera expectativas: 73% ocupación, $2,782/noche.",
+      "tir": 0.197,
+      "moic": 2.17
+    }
+  ],
+  "sensibilidadInmueble": {
+    "valores": [49050000, 65000000, 80000000, 95000000],
+    "retornoAnualizadoPct": {
+      "sin_cambios": [0.007, 0.061, 0.103, 0.140],
+      "conservador": [0.031, 0.083, 0.123, 0.159],
+      "base": [0.071, 0.119, 0.157, 0.190],
+      "optimista": [0.119, 0.162, 0.197, 0.228]
+    },
+    "retornoTotalPct": {
+      "sin_cambios": [0.033, 0.328, 0.606, 0.884],
+      "conservador": [0.151, 0.447, 0.725, 1.002],
+      "base": [0.349, 0.645, 0.923, 1.200],
+      "optimista": [0.593, 0.889, 1.166, 1.444]
+    }
+  },
+  "unitEconomics": {
+    "adr": 2310,
+    "occupancy": 0.60,
+    "revpar": 1386,
+    "suitesRentaCorta": 18,
+    "channelMix": {
+      "airbnb": null,
+      "vrbo": null,
+      "direct": null,
+      "other": null
+    }
+  },
+  "assumptions": {
+    "adrGrowthAnnual": 0.05,
+    "rampMonths": 0,
+    "wacc": null,
+    "stabilizedOccupancy": 0.60,
+    "managementFee": null,
+    "channelMixAirbnb": null
+  },
+  "supuestosRiesgo": [
+    {
+      "tema": "Valor del inmueble",
+      "supuesto": "$80.0M (25,000 por m² construido)",
+      "queFalta": "Avalúo; el terreno de 8,540 m² no está valuado por separado"
+    },
+    {
+      "tema": "Fecha de inicio",
+      "supuesto": "1 ene 2027",
+      "queFalta": "Confirmar"
+    },
+    {
+      "tema": "Ingresos del plan",
+      "supuesto": "Base: ocupación de 60% y tarifa de $2,310 por noche en el año 1, sobre 18 de las 22 suites",
+      "queFalta": "Validar con análisis de mercado; hoy el hotel ingresa $7.6M"
+    },
+    {
+      "tema": "Remodelación",
+      "supuesto": "$2.0M",
+      "queFalta": "Cotización"
+    },
+    {
+      "tema": "Gastos de cierre",
+      "supuesto": "4% del precio de compra",
+      "queFalta": "Confirmar con notaría"
+    },
+    {
+      "tema": "Reserva de mantenimiento",
+      "supuesto": "4% de los ingresos",
+      "queFalta": "Validar"
+    },
+    {
+      "tema": "Hipoteca",
+      "supuesto": "No hay: todo es capital propio",
+      "queFalta": "El modelo original planteaba una hipoteca de $36.0M; con ella el retorno sobre el capital propio sube, y también el riesgo"
+    },
+    {
+      "tema": "Venta del inmueble",
+      "supuesto": "No se vende; sin costos ni impuestos de venta en el modelo",
+      "queFalta": "Revisar con un fiscalista"
+    }
+  ]
+}

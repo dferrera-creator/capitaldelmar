@@ -1,0 +1,94 @@
+{
+  "slug": "canadian-resorts",
+  "status": "ESTIMADO",
+  "version": "3.0.0",
+  "modelDate": "2026-10-07",
+  "source": "Canadian_Resorts_v3_Valuacion.xlsx / 13_ESCENARIO_VALOR",
+  "currency": "MXN",
+  "reconciled": 80000000,
+  "wacc": null,
+  "irr": 0.157,
+  "moic": 1.92,
+  "paybackMonths": 60,
+  "entryPrice": 54000000,
+  "propertyValueNote": "por_confirmar",
+  "scenarios": {
+    "bear": { "label": "Conservador", "reconciled": 93130000, "irr": 0.123, "moic": 1.72 },
+    "base": { "label": "Base", "reconciled": 103820000, "irr": 0.157, "moic": 1.92 },
+    "bull": { "label": "Optimista", "reconciled": 116980000, "irr": 0.197, "moic": 2.17 }
+  },
+  "methods": [
+    {
+      "id": "dcf_flujos",
+      "label": "Valor por flujos (DCF)",
+      "weight": 0.30,
+      "min": 7610000,
+      "max": 44350000,
+      "base": 28490000,
+      "description": "Lo que vale el hotel por el dinero que genera, traído a valor de hoy. Sin cambios: $7.6M; Optimista: $44.4M.",
+      "assumptions": {
+        "escenarios": "Sin cambios $7.6M / Conservador $15.3M / Base $28.5M / Optimista $44.4M"
+      }
+    },
+    {
+      "id": "valor_inmueble",
+      "label": "Valor del inmueble (estimado)",
+      "weight": 0.40,
+      "min": 49050000,
+      "max": 95000000,
+      "base": 80000000,
+      "description": "Estimado de terreno (8,540 m²) + construcción (3,270 m²) en el mercado. Por confirmar con avalúo.",
+      "assumptions": {
+        "estado": "por_confirmar",
+        "nota": "Sin avalúo formal; $80M equivale a $25,000 por m² construido"
+      }
+    },
+    {
+      "id": "precio_lista",
+      "label": "Precio de lista original",
+      "weight": 0.10,
+      "min": 84000000,
+      "max": 84000000,
+      "base": 84000000,
+      "description": "Precio al que originalmente se ofrecía el hotel antes de la negociación.",
+      "assumptions": {
+        "nota": "Precio de lista previo a la negociación"
+      }
+    },
+    {
+      "id": "precio_pagado",
+      "label": "Precio de compra",
+      "weight": 0.10,
+      "min": 50000000,
+      "max": 50000000,
+      "base": 50000000,
+      "description": "Se compra 40.5% abajo del precio de lista de $84.0 M. Todo capital propio, sin hipoteca.",
+      "assumptions": {
+        "descuento": "40.5% respecto al precio de lista",
+        "hipoteca": 0
+      }
+    },
+    {
+      "id": "valor_posicion_5a",
+      "label": "Valor total posición (5 años)",
+      "weight": 0.10,
+      "min": 86710000,
+      "max": 116980000,
+      "base": 103820000,
+      "description": "Inversión $54M + efectivo generado en 5 años + plusvalía del inmueble. Caso Base: $103.8M (92%, 1.92x).",
+      "assumptions": {
+        "inversion": 54000000,
+        "efectivo5a": 23820000,
+        "inmueble": 80000000,
+        "plusvalia": 26000000,
+        "nota": "La ganancia del inmueble no es efectivo hasta que se vende"
+      }
+    }
+  ],
+  "checks": [
+    { "id": "discount_to_list", "pass": true, "message": "Se compra 40% abajo del precio de lista ($84.0M) — margen desde la entrada" },
+    { "id": "property_avaluo_pending", "pass": false, "message": "Avalúo del inmueble pendiente — valor de $80.0M es estimado (sin avalúo formal)" },
+    { "id": "no_hipoteca", "pass": true, "message": "Sin hipoteca — todo capital propio, sin riesgo de deuda o margin call" },
+    { "id": "hotel_operativo", "pass": true, "message": "Hotel operativo desde hoy — genera $7.6M reales en 2025, antes del plan de renta corta" }
+  ]
+}

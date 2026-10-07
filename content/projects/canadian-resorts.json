@@ -1,52 +1,49 @@
 {
   "slug": "canadian-resorts",
   "name": "Canadian Resorts",
-  "status": "ILUSTRATIVO",
-  "tagline": "Intercambio hotelero en Nuevo Vallarta y Huatulco",
-  "location": "Nuevo Vallarta y Huatulco",
-  "assetType": "HOTEL_TRADE",
-  "assetTypeLabel": "Intercambio hotelero",
-  "what_you_buy": "Participas en un esquema de intercambio hotelero que abarca propiedades en Nuevo Vallarta y Huatulco. Adquieres derechos de ingresos derivados de la operación y el intercambio de habitaciones en estos dos destinos de playa premium en México.",
-  "returnRate": 0,
-  "returnRateDisplay": "POR CONFIRMAR",
+  "status": "ESTIMADO",
+  "tagline": "Hotel boutique de 22 suites en Nuevo Vallarta — 40% bajo precio de lista",
+  "location": "Bucerías, Nuevo Vallarta, Nayarit",
+  "assetType": "HOTEL",
+  "assetTypeLabel": "Hotel boutique",
+  "what_you_buy": "Canadian Resorts es un hotel boutique de 4 estrellas con 22 suites dentro del Club de Golf Flamingos, en Bucerías, Nuevo Vallarta, Nayarit. Tiene un terreno de 8,540 m² con 3,270 m² de construcción, alberca, restaurante, kiosco, salón de juegos, lavandería y estacionamiento. Se compra en $50.0 M, 40% menos que su precio de lista original de $84.0 M. Hoy opera con ingresos de $7.6 M al año (2025). El plan es operarlo con administración profesional y precios dinámicos en Airbnb, VRBO y Booking, además de hospedaje boutique y eventos.",
+  "returnRate": 0.157,
+  "returnRateDisplay": "15.7% al año",
   "returnType": "ESTIMATED",
-  "returnNote": "ILUSTRATIVO – cifras de referencia sujetas a validación legal y financiera",
+  "returnNote": "Estimación caso Base — cifras sujetas a validación y a que los supuestos del modelo se cumplan",
   "minTicket": 1000000,
   "minTicketDisplay": "$1,000,000 MXN",
   "termMonths": 60,
-  "availableSlots": 25,
-  "totalSlots": 25,
+  "availableSlots": 22,
+  "totalSlots": 22,
+  "investment": {
+    "precioCompra": 50.0,
+    "remodelacion": 2.0,
+    "gastosCierre": 2.0,
+    "total": 54.0,
+    "hipoteca": 0,
+    "precioLista": 84.0,
+    "descuentoVsListaPct": 40.5
+  },
+  "propertyEstimatedM": 80.0,
+  "propertyValueStatus": "por_confirmar",
+  "startDate": "2027-01-01",
+  "startDateStatus": "por_confirmar",
   "benefits": [
-    "Acceso a portafolio de propiedades en dos destinos de playa premium",
-    "Ingresos por intercambio y ocupación garantizada (ver condiciones)",
-    "Diversificación geográfica dentro de México",
-    "Piso referenciado a CETES (ver condiciones)",
-    "Comprador de última instancia el primer año (ver condiciones)"
+    "Se compra 40% abajo del precio de lista de $84.0 M (precio: $50.0 M)",
+    "Genera efectivo desde el año 1 — sin período de espera de construcción",
+    "Sin hipoteca: todo es capital propio, sin riesgo de deuda",
+    "22 suites; 18 operan como renta de corta estancia en Airbnb, VRBO y Booking",
+    "Inmueble estimado en $80.0 M — Por confirmar con avalúo"
   ],
   "protections": [
-    "Contrato de intercambio hotelero",
-    "Fideicomiso de garantía (condiciones en revisión legal)",
-    "Comprador de última instancia año 1 (condiciones en revisión legal)",
-    "Auditoría anual de ocupación y resultados"
+    "Compra 40% abajo del precio de lista — margen de seguridad desde la entrada",
+    "Hotel operativo: genera $7.6 M en ingresos reales en 2025 (sin plan de renta corta)",
+    "Sin hipoteca — todo el capital es propio; no hay riesgo de llamada de margen ni intereses"
   ],
   "risks": [
-    "Pérdida parcial o total del capital si la operación hotelera falla.",
-    "Liquidez limitada: no existe mercado secundario activo para este instrumento.",
-    "Riesgo de temporada y variaciones en el turismo internacional.",
-    "Riesgo operativo de dos ubicaciones geográficas distintas.",
-    "Riesgo de crédito del emisor (DM Boutique Servicios Turísticos S.A.P.I. de C.V.).",
-    "Riesgo cambiario si los ingresos están denominados en divisas extranjeras."
-  ],
-  "founderTicket": {
-    "status": "ILUSTRATIVO",
-    "note": "Datos sujetos a confirmación antes de publicación",
-    "contribution": 1000000,
-    "couponYear1_1ticket": 0.14,
-    "couponYear1_2tickets": 0.16,
-    "couponYear1_3tickets": 0.18,
-    "couponDeclinePerYear": 0.02,
-    "conversionDiscount": { "year1": 0.30, "year2": 0.20, "year3": 0.10, "year4plus": 0 },
-    "maxPositions": 25,
-    "membershipDiscount": 0.30
-  }
+    "Que el plan de renta de corta estancia no alcance los ingresos proyectados: el escenario 'Sin cambios' muestra qué pasa si no ocurre ($8.0 M año 1 en vez de $14.9 M).",
+    "Que el inmueble valga menos de $80.0 M: el avalúo aún no está hecho; si valiera $49.0 M, el retorno en caso Base baja a 7.1% al año.",
+    "Que los costos de operar sean mayores a los estimados: la remodelación ($2.0 M) y los gastos de cierre ($2.0 M) están por confirmar."
+  ]
 }

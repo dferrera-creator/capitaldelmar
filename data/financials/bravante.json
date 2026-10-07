@@ -1,0 +1,153 @@
+{
+  "slug": "bravante",
+  "status": "ILUSTRATIVO",
+  "version": "1.0.0",
+  "modelDate": "2025-10-01",
+  "source": "ONB-B-05_Corrida_Financiera_KIVA_-_Bravante_Paso_D – datos ilustrativos",
+  "currency": "MXN",
+  "download": {
+    "url": "/financials/bravante-modelo-ilustrativo.xlsx",
+    "requiresAuth": false,
+    "label": "Descargar modelo (ILUSTRATIVO)"
+  },
+  "kpis": {
+    "ventaTotalAnio1": null,
+    "ingresoDelMarAnio1": null,
+    "ebitdaAnio1": null,
+    "ebitdaAnio5": 156589.3083,
+    "ebitdaAcumulado60m": null,
+    "fcffNormalizado": null,
+    "valorContrato": 5634261.696,
+    "evEbitda": 3.173940315,
+    "valorPorLlave": 0.06,
+    "tir": 0.2054642916,
+    "vpnWacc": 265527.733,
+    "moic": 1.61856323,
+    "deficitMaximoCaja": -1423566.872,
+    "dscrMinimo": null
+  },
+  "plByYear": [
+    {
+      "year": 1,
+      "ventaTotal": null,
+      "ingresoDelMar": null,
+      "ebitda": null,
+      "ebitdaMargin": null
+    },
+    {
+      "year": 2,
+      "ventaTotal": null,
+      "ingresoDelMar": null,
+      "ebitda": null,
+      "ebitdaMargin": null
+    },
+    {
+      "year": 3,
+      "ventaTotal": 1000411.721,
+      "ingresoDelMar": 337823.2703,
+      "ebitda": 146498.9739,
+      "ebitdaMargin": 0.4336556619379811
+    },
+    {
+      "year": 4,
+      "ventaTotal": 1047043.801,
+      "ingresoDelMar": 349021.5139,
+      "ebitda": 153812.7653,
+      "ebitdaMargin": 0.440697089360714
+    },
+    {
+      "year": 5,
+      "ventaTotal": 1066178.492,
+      "ingresoDelMar": 353391.9767,
+      "ebitda": 156589.3083,
+      "ebitdaMargin": 0.44310374491872273
+    }
+  ],
+  "scenarios": {
+    "bear": {
+      "label": "Conservador",
+      "description": "Recesión tipo 2008-09: -16.7% RevPAR, ocupación baja y ADR deprimido",
+      "tir": null,
+      "moic": null,
+      "ebitdaAnio1": null,
+      "vpn": null
+    },
+    "base": {
+      "label": "Base",
+      "description": "Supuestos centrales del modelo operativo con ramp-up normal",
+      "tir": null,
+      "moic": null,
+      "ebitdaAnio1": null,
+      "vpn": null
+    },
+    "bull": {
+      "label": "Optimista",
+      "description": "Alta ocupación, crecimiento ADR por encima del promedio sectorial",
+      "tir": null,
+      "moic": null,
+      "ebitdaAnio1": null,
+      "vpn": null
+    }
+  },
+  "stressTests": [
+    {
+      "id": "covid_2020",
+      "label": "COVID-2020 (Extremo)",
+      "revparImpact": -0.545,
+      "description": "Caída -54.5% RevPAR, comparable a 2020",
+      "tir": 0.2547525421732482,
+      "moic": 1.7862473121820337
+    },
+    {
+      "id": "recession_2008",
+      "label": "Recesión 2008-09 (Severo)",
+      "revparImpact": -0.167,
+      "description": "Caída -16.7% RevPAR, comparable a crisis financiera",
+      "tir": 0.22598229496239156,
+      "moic": 1.684580240073404
+    },
+    {
+      "id": "base_case",
+      "label": "Caso Base",
+      "revparImpact": 0,
+      "description": "Supuestos centrales del modelo",
+      "tir": 0.198107761063562,
+      "moic": 1.588893583971165
+    },
+    {
+      "id": "optimistic",
+      "label": "Optimista",
+      "revparImpact": 0.1,
+      "description": "RevPAR +10% respecto al caso base",
+      "tir": 0.16361502306793954,
+      "moic": 1.4745181278489574
+    },
+    {
+      "id": "stress_high",
+      "label": "Estrés Propio",
+      "revparImpact": -0.3,
+      "description": "Estrés sectorial propio del modelo: -30% RevPAR",
+      "tir": 0.26748498510575563,
+      "moic": 1.8321470050310766
+    }
+  ],
+  "unitEconomics": {
+    "adr": 1266.129054,
+    "occupancy": 0.6507751525,
+    "revpar": null,
+    "channelMix": {
+      "airbnb": null,
+      "vrbo": null,
+      "direct": null,
+      "other": null
+    }
+  },
+  "assumptions": {
+    "adrGrowthAnnual": 0.02,
+    "rampMonths": 24.0,
+    "wacc": null,
+    "stabilizedOccupancy": null,
+    "managementFee": null,
+    "channelMixAirbnb": null
+  }
+}

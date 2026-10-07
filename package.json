@@ -9,6 +9,7 @@
     "lint": "eslint",
     "postinstall": "prisma generate || exit 0",
     "build:valuation": "npx ts-node --esm scripts/build-valuation.ts",
+    "build:financials": "npx tsx scripts/build-financials.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

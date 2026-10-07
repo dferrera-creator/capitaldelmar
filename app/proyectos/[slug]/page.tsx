@@ -2,8 +2,10 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getProject, getProjectSlugs } from '@/lib/projects'
+import { getFinancials, getValuationData } from '@/lib/financials'
 import { Button } from '@/components/ui/button'
 import { RiskBanner } from '@/components/sections/risk-banner'
+import { FinancialPanel } from '@/components/financials/financial-panel'
 import {
   MapPin,
   Clock,
@@ -13,7 +15,6 @@ import {
   FileText,
   ArrowRight,
 } from 'lucide-react'
-import { cn, formatCurrency } from '@/lib/utils'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -52,6 +53,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
   } catch {
     notFound()
   }
+
+  const [financials, valuation] = await Promise.all([
+    Promise.resolve(getFinancials(slug)),
+    Promise.resolve(getValuationData(slug)),
+  ])
 
   const isConfirmed = project.returnRate > 0
   const returnTypeLabel = RETURN_TYPE_LABELS[project.returnType] ?? project.returnType
@@ -169,6 +175,19 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               </div>
             </div>
           </section>
+
+          {/* Modelo financiero */}
+          {financials && (
+            <section>
+              <h2 className="mb-4 font-serif text-2xl font-semibold text-ink-900">
+                Modelo financiero
+              </h2>
+              <FinancialPanel
+                financials={financials}
+                valuation={valuation ?? undefined}
+              />
+            </section>
+          )}
 
           {/* Riesgos */}
           <section>

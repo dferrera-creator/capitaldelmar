@@ -1,0 +1,52 @@
+{
+  "slug": "canadian-resorts",
+  "name": "Canadian Resorts",
+  "status": "ILUSTRATIVO",
+  "tagline": "Intercambio hotelero en Nuevo Vallarta y Huatulco",
+  "location": "Nuevo Vallarta y Huatulco",
+  "assetType": "HOTEL_TRADE",
+  "assetTypeLabel": "Intercambio hotelero",
+  "what_you_buy": "Participas en un esquema de intercambio hotelero que abarca propiedades en Nuevo Vallarta y Huatulco. Adquieres derechos de ingresos derivados de la operación y el intercambio de habitaciones en estos dos destinos de playa premium en México.",
+  "returnRate": 0,
+  "returnRateDisplay": "POR CONFIRMAR",
+  "returnType": "ESTIMATED",
+  "returnNote": "ILUSTRATIVO – cifras de referencia sujetas a validación legal y financiera",
+  "minTicket": 1000000,
+  "minTicketDisplay": "$1,000,000 MXN",
+  "termMonths": 60,
+  "availableSlots": 25,
+  "totalSlots": 25,
+  "benefits": [
+    "Acceso a portafolio de propiedades en dos destinos de playa premium",
+    "Ingresos por intercambio y ocupación garantizada (ver condiciones)",
+    "Diversificación geográfica dentro de México",
+    "Piso referenciado a CETES (ver condiciones)",
+    "Comprador de última instancia el primer año (ver condiciones)"
+  ],
+  "protections": [
+    "Contrato de intercambio hotelero",
+    "Fideicomiso de garantía (condiciones en revisión legal)",
+    "Comprador de última instancia año 1 (condiciones en revisión legal)",
+    "Auditoría anual de ocupación y resultados"
+  ],
+  "risks": [
+    "Pérdida parcial o total del capital si la operación hotelera falla.",
+    "Liquidez limitada: no existe mercado secundario activo para este instrumento.",
+    "Riesgo de temporada y variaciones en el turismo internacional.",
+    "Riesgo operativo de dos ubicaciones geográficas distintas.",
+    "Riesgo de crédito del emisor (DM Boutique Servicios Turísticos S.A.P.I. de C.V.).",
+    "Riesgo cambiario si los ingresos están denominados en divisas extranjeras."
+  ],
+  "founderTicket": {
+    "status": "ILUSTRATIVO",
+    "note": "Datos sujetos a confirmación antes de publicación",
+    "contribution": 1000000,
+    "couponYear1_1ticket": 0.14,
+    "couponYear1_2tickets": 0.16,
+    "couponYear1_3tickets": 0.18,
+    "couponDeclinePerYear": 0.02,
+    "conversionDiscount": { "year1": 0.30, "year2": 0.20, "year3": 0.10, "year4plus": 0 },
+    "maxPositions": 25,
+    "membershipDiscount": 0.30
+  }
+}

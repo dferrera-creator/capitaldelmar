@@ -1,0 +1,26 @@
+[
+  {
+    "id": "founder",
+    "name": "[NOMBRE PENDIENTE]",
+    "role": "Fundador y Director General",
+    "bio": "[PENDIENTE – agregar bio real]",
+    "linkedin": null,
+    "imageUrl": null
+  },
+  {
+    "id": "capital",
+    "name": "[NOMBRE PENDIENTE]",
+    "role": "Director de Capital",
+    "bio": "[PENDIENTE – agregar bio real]",
+    "linkedin": null,
+    "imageUrl": null
+  },
+  {
+    "id": "operations",
+    "name": "[NOMBRE PENDIENTE]",
+    "role": "Director de Operaciones",
+    "bio": "[PENDIENTE – agregar bio real]",
+    "linkedin": null,
+    "imageUrl": null
+  }
+]

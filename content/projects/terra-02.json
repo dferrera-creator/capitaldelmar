@@ -1,0 +1,50 @@
+{
+  "slug": "terra-02",
+  "name": "Terra 02 Los Cabos",
+  "status": "OPEN",
+  "tagline": "Lotes residenciales de lujo en corredor turístico",
+  "location": "Corridor Los Cabos, BCS",
+  "assetType": "LAND",
+  "assetTypeLabel": "Lote residencial / Plusvalía",
+  "displayOrder": 6,
+  "what_you_buy": "Adquieres derechos sobre uno o más lotes residenciales de lujo en el corredor turístico de Los Cabos. La plusvalía está respaldada por la escasez de tierra en una de las zonas de mayor crecimiento del turismo de lujo en América Latina.",
+  "returnRate": 18,
+  "returnRateDisplay": "18%",
+  "returnType": "ESTIMATED",
+  "returnNote": "ILUSTRATIVO – plusvalía estimada anualizada basada en comparables de mercado. No es promesa de rendimiento. Ver riesgos.",
+  "minTicket": 750000,
+  "minTicketDisplay": "$750,000 MXN",
+  "termMonths": 48,
+  "availableSlots": 6,
+  "totalSlots": 10,
+  "benefits": [
+    "Corredor Los Cabos: mercado de lujo con demanda internacional creciente",
+    "Piso referenciado a CETES (ver condiciones)",
+    "Comprador de última instancia el primer año (ver condiciones)",
+    "Fideicomiso sobre el título de propiedad"
+  ],
+  "protections": [
+    "Título de propiedad fideicomitido",
+    "Contrato de inversión con derechos preferentes",
+    "Piso referenciado a CETES (condiciones en revisión legal)",
+    "Comprador de última instancia año 1 (condiciones en revisión legal)"
+  ],
+  "risks": [
+    "Pérdida parcial o total del capital si el mercado inmobiliario de Los Cabos se contrae.",
+    "Liquidez limitada: no existe mercado secundario activo para este instrumento.",
+    "Riesgo de desarrollo: permisos o regulaciones pueden retrasar la plusvalía.",
+    "Riesgo cambiario si el precio está denominado en USD.",
+    "Riesgo de crédito del emisor.",
+    "Riesgo de concentración geográfica en Los Cabos."
+  ],
+  "founderTicket": {
+    "status": "ILUSTRATIVO",
+    "note": "Datos sujetos a confirmación",
+    "contribution": 750000,
+    "couponYear1_1ticket": 0.18,
+    "couponYear1_2tickets": 0.20,
+    "couponYear1_3tickets": 0.22,
+    "couponDeclinePerYear": 0.02,
+    "maxPositions": 10
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "que-es-del-mar-capital",
+    "question": "¿Qué es Del Mar Capital?",
+    "answer": "Del Mar Capital es una plataforma de inversión boutique que conecta a inversionistas privados con oportunidades en activos turísticos e inmobiliarios seleccionados en México. Operamos bajo DM Boutique Servicios Turísticos S.A.P.I. de C.V. y nos especializamos en estructurar inversiones con protecciones contractuales, transparencia en la valuación y acceso directo a operadores con trayectoria. Cada proyecto pasa por un proceso de selección y un análisis de valuación interno antes de ser presentado a inversionistas. AVISO: La información presentada es de carácter ilustrativo y no constituye una oferta pública de valores. [PENDIENTE LEGAL]"
+  },
+  {
+    "id": "proceso-de-inversion",
+    "question": "¿Cómo funciona el proceso de inversión?",
+    "answer": "El proceso tiene cuatro etapas: (1) Exploración: revisas los proyectos disponibles en la plataforma y usas el simulador de rendimiento para entender los escenarios posibles. (2) Calificación: completar el formulario de interés y una llamada con el equipo para verificar que cumples con el perfil de inversionista requerido. (3) Data Room: una vez calificado, accedes a documentación detallada del proyecto bajo acuerdo de confidencialidad. (4) Formalización: firma de contrato, transferencia de fondos y confirmación de participación. Los plazos varían por proyecto. [PENDIENTE LEGAL – proceso sujeto a revisión]"
+  },
+  {
+    "id": "inversion-minima",
+    "question": "¿Cuál es la inversión mínima?",
+    "answer": "La inversión mínima ilustrativa es de $1,000,000 MXN por proyecto. Este monto es ILUSTRATIVO y está sujeto a confirmación legal y financiera antes de la apertura formal de cada proyecto. Algunos proyectos pueden tener estructuras de Ticket Fundador con condiciones diferenciadas para los primeros inversionistas. Consulta los detalles específicos de cada proyecto en su ficha informativa."
+  },
+  {
+    "id": "piso-cetes",
+    "question": "¿Qué es el piso de rendimiento referenciado a CETES?",
+    "answer": "El piso de rendimiento referenciado a CETES es una protección contractual que busca garantizar que el inversionista reciba al menos un rendimiento equivalente a la tasa de CETES del período correspondiente, incluso si la operación del activo subyacente tiene un desempeño inferior al proyectado. [PENDIENTE LEGAL – la definición exacta de la mecánica, la contraparte obligada, las condiciones de activación y los límites de esta protección están en revisión legal. No debe interpretarse como garantía absoluta de rendimiento.]"
+  },
+  {
+    "id": "comprador-ultima-instancia",
+    "question": "¿Qué es el comprador de última instancia?",
+    "answer": "El comprador de última instancia es un mecanismo por el cual Del Mar Capital o una entidad designada se compromete contractualmente a adquirir la participación del inversionista durante el primer año de la inversión, si este desea salir anticipadamente, bajo condiciones preestablecidas. Este mecanismo busca proveer liquidez mínima en la etapa inicial. [PENDIENTE LEGAL – la definición exacta de la mecánica, la contraparte obligada, el precio de recompra y las condiciones de activación están en revisión legal. No debe interpretarse como garantía de liquidez ilimitada.]"
+  },
+  {
+    "id": "fideicomiso",
+    "question": "¿Cómo funciona el fideicomiso?",
+    "answer": "El fideicomiso de garantía es una estructura legal en la que un activo o flujo de efectivo se deposita ante una institución fiduciaria (banco o casa de bolsa autorizada) para respaldar las obligaciones del emisor hacia los inversionistas. En caso de incumplimiento, el fideicomiso permite a los inversionistas ejecutar sus derechos sobre el activo fideicomitido sin necesidad de recurrir a un proceso judicial ordinario. [PENDIENTE LEGAL – las condiciones específicas de cada fideicomiso, incluyendo el activo fideicomitido, la institución fiduciaria, las causales de ejecución y los procedimientos, están en revisión legal para cada proyecto.]"
+  },
+  {
+    "id": "riesgos",
+    "question": "¿Qué puede salir mal?",
+    "answer": "Invertir en proyectos turísticos e inmobiliarios conlleva riesgos reales que pueden resultar en pérdida parcial o total del capital. Los principales riesgos incluyen: (1) Riesgo operativo: el activo subyacente puede tener un desempeño inferior al proyectado por problemas de administración, mercado o eventos externos. (2) Riesgo de liquidez: no existe un mercado secundario activo; recuperar tu inversión antes del plazo acordado puede ser difícil o imposible. (3) Riesgo de crédito del emisor: DM Boutique Servicios Turísticos S.A.P.I. de C.V. puede incumplir sus obligaciones. (4) Riesgo de mercado: caídas en el turismo, la economía o el mercado inmobiliario pueden afectar los rendimientos. (5) Riesgo regulatorio: cambios en leyes fiscales, de uso de suelo, laborales o sectoriales pueden impactar la operación. (6) Riesgo de concentración: si inviertes en un solo proyecto, estás expuesto a los riesgos específicos de ese activo. Los rendimientos históricos o proyectados no son garantía de rendimientos futuros."
+  },
+  {
+    "id": "quien-es-el-operador",
+    "question": "¿Quién es el operador?",
+    "answer": "Del Mar Capital opera bajo DM Boutique Servicios Turísticos S.A.P.I. de C.V., empresa mexicana enfocada en la estructuración y administración de inversiones en el sector turístico boutique. Cada proyecto puede tener un operador de activo distinto, con experiencia específica en el tipo de activo correspondiente (hotel, beach club, terreno, etc.). La información detallada sobre el equipo operador de cada proyecto está disponible en el Data Room correspondiente. [PENDIENTE – agregar información completa del equipo directivo]"
+  },
+  {
+    "id": "invertir-extranjero",
+    "question": "¿Puedo invertir desde el extranjero?",
+    "answer": "La plataforma está diseñada principalmente para inversionistas mexicanos o extranjeros con residencia fiscal en México. Los inversionistas no residentes en México pueden enfrentar restricciones legales, fiscales y regulatorias adicionales según su país de domicilio. [PENDIENTE LEGAL – los requisitos específicos para inversionistas extranjeros, incluyendo obligaciones de reporte, retenciones fiscales y restricciones cambiarias, están en revisión legal. Consulta con tu asesor fiscal antes de invertir.]"
+  },
+  {
+    "id": "data-room",
+    "question": "¿Qué es el data room?",
+    "answer": "El data room es un repositorio digital seguro que contiene la documentación detallada de cada proyecto: modelo financiero completo, escrituras o contratos del activo subyacente, estados financieros del operador, análisis de riesgo, términos legales del instrumento, acuerdo de confidencialidad (NDA) y demás documentos de debida diligencia. El acceso al data room se otorga únicamente a inversionistas que hayan completado el proceso de calificación y firmado el NDA correspondiente. Esto protege la información sensible del proyecto y asegura que solo inversionistas serios accedan a ella."
+  },
+  {
+    "id": "valuacion-football-field",
+    "question": "¿Cómo se calcula la valuación (football field)?",
+    "answer": "Del Mar Capital utiliza un análisis de valuación tipo 'football field' que combina múltiples metodologías para estimar el valor del activo subyacente. Los métodos típicamente incluyen: (1) DCF con múltiplo de salida: descuento de flujos libres a equity con un múltiplo EV/EBITDA de salida. (2) DCF run-off: solo flujos durante el periodo de inversión, sin valor terminal. (3) Múltiplo EV/EBITDA: aplicando rangos de múltiplos de transacciones comparables. (4) Múltiplo EV/Ingresos: sobre los ingresos atribuibles al instrumento. (5) Valor por comparable de mercado: basado en transacciones de activos similares. Cada método tiene una ponderación y el resultado reconciliado es el valor base de la inversión. AVISO: Todas las valuaciones presentadas son ILUSTRATIVAS y están sujetas a validación por terceros independientes antes de la formalización de cualquier inversión."
+  },
+  {
+    "id": "documentos-para-invertir",
+    "question": "¿Qué documentos necesito para invertir?",
+    "answer": "Para completar el proceso de inversión generalmente se requiere: (1) Identificación oficial vigente (INE/IFE o pasaporte). (2) Comprobante de domicilio reciente (no mayor a 3 meses). (3) RFC y constancia de situación fiscal actualizada. (4) Estado de cuenta bancario reciente (para acreditar origen de fondos). (5) Declaración de inversionista calificado o documentos que acrediten el perfil de inversión. (6) Firma del NDA para acceso al data room. (7) Contrato de participación firmado. [PENDIENTE LEGAL – la lista definitiva de documentos requeridos, incluyendo requisitos de KYC/AML y la declaración de inversionista calificado aplicable, está en revisión legal.]"
+  }
+]

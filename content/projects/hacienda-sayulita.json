@@ -1,0 +1,46 @@
+{
+  "slug": "hacienda-sayulita",
+  "name": "Hacienda Sayulita",
+  "status": "COMING_SOON",
+  "tagline": "Casas de surf con operador en la Riviera Nayarit",
+  "location": "Sayulita, Nayarit",
+  "assetType": "CASA",
+  "assetTypeLabel": "Casa / Fracción de uso",
+  "displayOrder": 5,
+  "what_you_buy": "Proyecto en estructuración. Conjunto de casas de surf con operador integrado en Sayulita, destino Pueblo Mágico y capital del surf del Pacífico mexicano. Alta demanda de viajeros internacionales jóvenes con poder adquisitivo.",
+  "returnRate": 0,
+  "returnRateDisplay": "POR CONFIRMAR",
+  "returnType": "ESTIMATED",
+  "returnNote": "ILUSTRATIVO – en estructuración. Cifras sujetas a validación.",
+  "minTicket": 200000,
+  "minTicketDisplay": "$200,000 MXN (tentativo)",
+  "termMonths": 36,
+  "availableSlots": 20,
+  "totalSlots": 20,
+  "benefits": [
+    "Sayulita: Pueblo Mágico con demanda turística internacional creciente",
+    "Estructura con piso referenciado a CETES (ver condiciones)",
+    "Ticket de entrada menor que otros proyectos",
+    "Acceso a registro de interés sin compromiso"
+  ],
+  "protections": [
+    "Fideicomiso de garantía (en estructuración)",
+    "Contrato de inversión (en revisión legal)",
+    "Piso referenciado a CETES (condiciones en revisión legal)",
+    "Comprador de última instancia año 1 (condiciones en revisión legal)"
+  ],
+  "risks": [
+    "Proyecto en estructuración: no existe certeza de que la captación abra.",
+    "Pérdida parcial o total del capital.",
+    "Liquidez limitada.",
+    "Riesgo de mercado: saturación de oferta en Sayulita.",
+    "Riesgo regulatorio: Pueblo Mágico con restricciones de construcción.",
+    "Riesgo de crédito del emisor."
+  ],
+  "founderTicket": {
+    "status": "ILUSTRATIVO",
+    "note": "En estructuración",
+    "contribution": 200000,
+    "maxPositions": 20
+  }
+}

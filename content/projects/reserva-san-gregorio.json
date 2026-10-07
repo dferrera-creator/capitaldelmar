@@ -1,0 +1,52 @@
+{
+  "slug": "reserva-san-gregorio",
+  "name": "Reserva San Gregorio by Akasha",
+  "status": "ILUSTRATIVO",
+  "tagline": "Tierra en reserva natural en Jalisco",
+  "location": "Concepción de Buenos Aires, Jalisco",
+  "assetType": "LAND",
+  "assetTypeLabel": "Tierra / Terreno",
+  "what_you_buy": "Participas en la plusvalía de un terreno en una reserva natural de bajo impacto en Jalisco. No operas el activo directamente; adquieres derechos sobre la apreciación del valor del suelo respaldados por contrato y fideicomiso.",
+  "returnRate": 0,
+  "returnRateDisplay": "POR CONFIRMAR",
+  "returnType": "ESTIMATED",
+  "returnNote": "ILUSTRATIVO – cifras de referencia sujetas a validación legal y financiera",
+  "minTicket": 1000000,
+  "minTicketDisplay": "$1,000,000 MXN",
+  "termMonths": 48,
+  "availableSlots": 15,
+  "totalSlots": 15,
+  "benefits": [
+    "Plusvalía estimada del terreno en zona de alta demanda turística",
+    "Participación en proyecto de desarrollo de bajo impacto ambiental",
+    "Piso referenciado a CETES (ver condiciones)",
+    "Comprador de última instancia el primer año (ver condiciones)",
+    "Acceso a comunidad de co-inversores Del Mar Capital"
+  ],
+  "protections": [
+    "Título de propiedad fideicomitido",
+    "Fideicomiso de garantía (condiciones en revisión legal)",
+    "Comprador de última instancia año 1 (condiciones en revisión legal)",
+    "Contrato de inversión con derechos preferentes"
+  ],
+  "risks": [
+    "Pérdida parcial o total del capital si el mercado inmobiliario se contrae.",
+    "Liquidez limitada: no existe mercado secundario activo para este instrumento.",
+    "Riesgo de desarrollo: permisos o regulaciones pueden retrasar o cancelar el proyecto.",
+    "Riesgo ambiental: cambios en regulaciones de uso de suelo o áreas naturales protegidas.",
+    "Riesgo de crédito del emisor (DM Boutique Servicios Turísticos S.A.P.I. de C.V.).",
+    "Riesgo de concentración geográfica en una sola ubicación."
+  ],
+  "founderTicket": {
+    "status": "ILUSTRATIVO",
+    "note": "Datos sujetos a confirmación antes de publicación",
+    "contribution": 1000000,
+    "couponYear1_1ticket": 0.14,
+    "couponYear1_2tickets": 0.16,
+    "couponYear1_3tickets": 0.18,
+    "couponDeclinePerYear": 0.02,
+    "conversionDiscount": { "year1": 0.30, "year2": 0.20, "year3": 0.10, "year4plus": 0 },
+    "maxPositions": 15,
+    "membershipDiscount": 0.30
+  }
+}

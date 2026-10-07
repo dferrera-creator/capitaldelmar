@@ -1,0 +1,46 @@
+{
+  "slug": "mar-de-cortez",
+  "name": "Mar de Cortez La Paz",
+  "status": "COMING_SOON",
+  "tagline": "Eco-resort en la Reserva de la Biosfera de La Paz",
+  "location": "La Paz, BCS",
+  "assetType": "ECOHOTEL",
+  "assetTypeLabel": "Eco-resort / Fracción",
+  "displayOrder": 4,
+  "what_you_buy": "Proyecto en etapa de estructuración. Participarás en la propiedad fraccionada de un eco-resort de 18 unidades con acceso exclusivo al Mar de Cortés. Operado bajo concepto de turismo de naturaleza de bajo impacto.",
+  "returnRate": 0,
+  "returnRateDisplay": "POR CONFIRMAR",
+  "returnType": "ESTIMATED",
+  "returnNote": "ILUSTRATIVO – en estructuración. Cifras sujetas a validación legal y financiera antes de apertura de captación.",
+  "minTicket": 500000,
+  "minTicketDisplay": "$500,000 MXN (tentativo)",
+  "termMonths": 60,
+  "availableSlots": 18,
+  "totalSlots": 18,
+  "benefits": [
+    "Destino con alta demanda de turismo de naturaleza internacional",
+    "Estructura de proyecto con piso referenciado a CETES (ver condiciones)",
+    "Comprador de última instancia el primer año (ver condiciones)",
+    "Acceso a registro de interés sin compromiso"
+  ],
+  "protections": [
+    "Fideicomiso de garantía (en estructuración)",
+    "Contrato de inversión (en revisión legal)",
+    "Piso referenciado a CETES (condiciones en revisión legal)",
+    "Comprador de última instancia año 1 (condiciones en revisión legal)"
+  ],
+  "risks": [
+    "Proyecto en estructuración: no existe certeza de que la captación abra.",
+    "Pérdida parcial o total del capital.",
+    "Liquidez limitada.",
+    "Riesgo ambiental y regulatorio en zona de reserva de biosfera.",
+    "Riesgo de desarrollo: permisos pueden demorar o cancelar el proyecto.",
+    "Riesgo de crédito del emisor."
+  ],
+  "founderTicket": {
+    "status": "ILUSTRATIVO",
+    "note": "En estructuración",
+    "contribution": 500000,
+    "maxPositions": 18
+  }
+}

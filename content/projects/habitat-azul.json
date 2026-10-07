@@ -1,0 +1,52 @@
+{
+  "slug": "habitat-azul",
+  "name": "Hábitat Azul",
+  "status": "ILUSTRATIVO",
+  "tagline": "Flujo de administración en Centro Histórico de Guadalajara",
+  "location": "Centro Histórico, Guadalajara",
+  "assetType": "MANAGEMENT_FLOW",
+  "assetTypeLabel": "Flujo de administración",
+  "what_you_buy": "Participas en los ingresos netos de administración de una propiedad boutique patrimonial en el Centro Histórico de Guadalajara. No compras el inmueble; adquieres el derecho a recibir un flujo periódico respaldado por contrato, con exposición a una zona de alta demanda turística y renovación urbana.",
+  "returnRate": 0,
+  "returnRateDisplay": "POR CONFIRMAR",
+  "returnType": "ESTIMATED",
+  "returnNote": "ILUSTRATIVO – cifras de referencia sujetas a validación legal y financiera",
+  "minTicket": 1000000,
+  "minTicketDisplay": "$1,000,000 MXN",
+  "termMonths": 36,
+  "availableSlots": 15,
+  "totalSlots": 15,
+  "benefits": [
+    "Flujo trimestral en propiedad boutique patrimonial",
+    "Ubicación premium en Centro Histórico con alta demanda turística",
+    "Piso referenciado a CETES (ver condiciones)",
+    "Comprador de última instancia el primer año (ver condiciones)",
+    "Potencial de plusvalía en zona de renovación urbana"
+  ],
+  "protections": [
+    "Contrato de participación en flujo de administración",
+    "Fideicomiso de garantía (condiciones en revisión legal)",
+    "Comprador de última instancia año 1 (condiciones en revisión legal)",
+    "Respaldo en activo inmobiliario patrimonial"
+  ],
+  "risks": [
+    "Pérdida parcial o total del capital si la operación del activo subyacente falla.",
+    "Liquidez limitada: no existe mercado secundario activo para este instrumento.",
+    "Riesgo operativo del administrador del activo.",
+    "Riesgo patrimonial: restricciones legales en inmuebles históricos.",
+    "Riesgo de crédito del emisor (DM Boutique Servicios Turísticos S.A.P.I. de C.V.).",
+    "Riesgo regulatorio: normas de protección del patrimonio histórico."
+  ],
+  "founderTicket": {
+    "status": "ILUSTRATIVO",
+    "note": "Datos sujetos a confirmación antes de publicación",
+    "contribution": 1000000,
+    "couponYear1_1ticket": 0.14,
+    "couponYear1_2tickets": 0.16,
+    "couponYear1_3tickets": 0.18,
+    "couponDeclinePerYear": 0.02,
+    "conversionDiscount": { "year1": 0.30, "year2": 0.20, "year3": 0.10, "year4plus": 0 },
+    "maxPositions": 15,
+    "membershipDiscount": 0.30
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "casa-akasha",
+  "name": "Casa Akasha Mazatlán",
+  "status": "OPEN",
+  "tagline": "Boutique colonial en el centro histórico de Mazatlán",
+  "location": "Mazatlán, Sinaloa",
+  "assetType": "HOTEL",
+  "assetTypeLabel": "Hotel boutique / Fracción",
+  "displayOrder": 3,
+  "what_you_buy": "Participas en la propiedad fraccionada de un hotel boutique de 12 cuartos en el Centro Histórico de Mazatlán, Patrimonio de la Humanidad UNESCO. El activo está completamente operado por Del Mar Boutique con historial de ocupación verificable.",
+  "returnRate": 15,
+  "returnRateDisplay": "15%",
+  "returnType": "HISTORICAL",
+  "returnNote": "ILUSTRATIVO – rendimiento histórico del activo operado. Los rendimientos pasados no garantizan rendimientos futuros.",
+  "minTicket": 250000,
+  "minTicketDisplay": "$250,000 MXN",
+  "termMonths": 48,
+  "availableSlots": 5,
+  "totalSlots": 15,
+  "benefits": [
+    "Historial de operación verificable (ILUSTRATIVO)",
+    "Centro histórico UNESCO con demanda turística constante",
+    "Piso referenciado a CETES (ver condiciones)",
+    "Comprador de última instancia el primer año (ver condiciones)"
+  ],
+  "protections": [
+    "Fideicomiso de garantía sobre el inmueble",
+    "Historial operativo de 3+ años (ILUSTRATIVO)",
+    "Contrato de inversión con cláusulas de protección",
+    "Piso referenciado a CETES (condiciones en revisión legal)"
+  ],
+  "risks": [
+    "Pérdida parcial o total del capital si la ocupación disminuye.",
+    "Liquidez limitada: no existe mercado secundario activo.",
+    "Riesgo de mantenimiento de inmueble histórico con costos elevados.",
+    "Riesgo operativo: cambios en el personal o modelo de gestión.",
+    "Riesgo de crédito del emisor.",
+    "Riesgo de cambios en regulaciones de turismo en zona patrimonial."
+  ],
+  "founderTicket": {
+    "status": "ILUSTRATIVO",
+    "note": "Datos sujetos a confirmación",
+    "contribution": 250000,
+    "couponYear1_1ticket": 0.15,
+    "couponYear1_2tickets": 0.17,
+    "couponYear1_3tickets": 0.19,
+    "couponDeclinePerYear": 0.02,
+    "maxPositions": 15
+  }
+}

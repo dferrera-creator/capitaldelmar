@@ -1,0 +1,50 @@
+{
+  "slug": "punto-ballena",
+  "name": "Punto Ballena Tulum",
+  "status": "OPEN",
+  "tagline": "Suites ecoboutique en la Riviera Maya",
+  "location": "Tulum, Quintana Roo",
+  "assetType": "SUITE",
+  "assetTypeLabel": "Suite / Cuarto de hotel",
+  "displayOrder": 2,
+  "what_you_buy": "Adquieres derechos sobre una suite en un hotel ecoboutique en Tulum operado por Del Mar Boutique. El hotel opera con enfoque de bajo impacto ambiental y ocupa el segmento de lujo consciente, con tarifas promedio por encima del mercado general de Tulum.",
+  "returnRate": 12,
+  "returnRateDisplay": "12%",
+  "returnType": "ESTIMATED",
+  "returnNote": "ILUSTRATIVO – rendimiento estimado basado en proyecciones de ocupación. No es promesa de rendimiento. Ver riesgos.",
+  "minTicket": 300000,
+  "minTicketDisplay": "$300,000 MXN",
+  "termMonths": 24,
+  "availableSlots": 12,
+  "totalSlots": 30,
+  "benefits": [
+    "Piso de rendimiento referenciado a CETES (ver condiciones)",
+    "Comprador de última instancia el primer año (ver condiciones)",
+    "Mercado de lujo consciente con alta demanda internacional",
+    "Operador con portafolio activo de 159 propiedades (ILUSTRATIVO)"
+  ],
+  "protections": [
+    "Fideicomiso de garantía sobre el activo",
+    "Contrato de inversión con cláusulas de salida",
+    "Comprador de última instancia año 1 (condiciones en revisión legal)",
+    "Piso referenciado a CETES (condiciones en revisión legal)"
+  ],
+  "risks": [
+    "Pérdida parcial o total del capital si la demanda turística en Tulum disminuye.",
+    "Liquidez limitada: no existe mercado secundario activo.",
+    "Riesgo regulatorio: cambios en permisos de operación en zona federal.",
+    "Riesgo ambiental: afectaciones por huracanes o cambios en el ecosistema de la selva.",
+    "Riesgo de crédito del emisor.",
+    "Riesgo de concentración en un solo destino."
+  ],
+  "founderTicket": {
+    "status": "ILUSTRATIVO",
+    "note": "Datos sujetos a confirmación",
+    "contribution": 300000,
+    "couponYear1_1ticket": 0.12,
+    "couponYear1_2tickets": 0.14,
+    "couponYear1_3tickets": 0.16,
+    "couponDeclinePerYear": 0.02,
+    "maxPositions": 30
+  }
+}

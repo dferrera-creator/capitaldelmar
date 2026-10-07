@@ -1,0 +1,52 @@
+{
+  "slug": "la-playita",
+  "name": "La Playita Beach Club",
+  "status": "ILUSTRATIVO",
+  "tagline": "Acciones de negocio en beach club boutique",
+  "location": "San Miguel de Allende, Guanajuato",
+  "assetType": "BUSINESS_SHARES",
+  "assetTypeLabel": "Acciones de negocio",
+  "what_you_buy": "Adquieres acciones directas en La Playita Beach Club, un negocio boutique en operación. Como accionista fundador, participas en las utilidades del negocio y en las decisiones estratégicas, con derechos establecidos en un acuerdo de accionistas.",
+  "returnRate": 0,
+  "returnRateDisplay": "POR CONFIRMAR",
+  "returnType": "ESTIMATED",
+  "returnNote": "ILUSTRATIVO – cifras de referencia sujetas a validación legal y financiera",
+  "minTicket": 1000000,
+  "minTicketDisplay": "$1,000,000 MXN",
+  "termMonths": 36,
+  "availableSlots": 10,
+  "totalSlots": 10,
+  "benefits": [
+    "Participación directa en utilidades del beach club",
+    "Acceso preferencial como socio fundador",
+    "Piso referenciado a CETES (ver condiciones)",
+    "Comprador de última instancia el primer año (ver condiciones)",
+    "Voto en decisiones estratégicas del negocio"
+  ],
+  "protections": [
+    "Escritura de acciones en sociedad",
+    "Fideicomiso de garantía (condiciones en revisión legal)",
+    "Comprador de última instancia año 1 (condiciones en revisión legal)",
+    "Acuerdo de accionistas con derechos preferentes"
+  ],
+  "risks": [
+    "Pérdida parcial o total del capital si el negocio no prospera.",
+    "Liquidez limitada: las acciones no cotizan en bolsa.",
+    "Riesgo operativo: dependencia del equipo directivo y la ubicación.",
+    "Riesgo de mercado: variaciones en el turismo local y nacional.",
+    "Riesgo de crédito del emisor (DM Boutique Servicios Turísticos S.A.P.I. de C.V.).",
+    "Riesgo regulatorio: cambios en licencias, permisos o zonificación."
+  ],
+  "founderTicket": {
+    "status": "ILUSTRATIVO",
+    "note": "Datos sujetos a confirmación antes de publicación",
+    "contribution": 1000000,
+    "couponYear1_1ticket": 0.14,
+    "couponYear1_2tickets": 0.16,
+    "couponYear1_3tickets": 0.18,
+    "couponDeclinePerYear": 0.02,
+    "conversionDiscount": { "year1": 0.30, "year2": 0.20, "year3": 0.10, "year4plus": 0 },
+    "maxPositions": 10,
+    "membershipDiscount": 0.30
+  }
+}

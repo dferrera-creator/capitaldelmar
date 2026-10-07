@@ -1,0 +1,52 @@
+{
+  "slug": "monte-rocella",
+  "name": "Monte Rocella",
+  "status": "ILUSTRATIVO",
+  "tagline": "Flujo de administración en Los Cabos",
+  "location": "El Tezal, Los Cabos",
+  "assetType": "MANAGEMENT_FLOW",
+  "assetTypeLabel": "Flujo de administración",
+  "what_you_buy": "Participas en los ingresos netos de administración de una propiedad premium en El Tezal, Los Cabos. No compras el inmueble; adquieres el derecho a recibir un flujo periódico de la administración del activo, respaldado por contrato y fideicomiso.",
+  "returnRate": 0,
+  "returnRateDisplay": "POR CONFIRMAR",
+  "returnType": "ESTIMATED",
+  "returnNote": "ILUSTRATIVO – cifras de referencia sujetas a validación legal y financiera",
+  "minTicket": 1000000,
+  "minTicketDisplay": "$1,000,000 MXN",
+  "termMonths": 36,
+  "availableSlots": 20,
+  "totalSlots": 20,
+  "benefits": [
+    "Flujo trimestral de administración en zona de alta plusvalía",
+    "Exposición al mercado premium de Los Cabos",
+    "Piso referenciado a CETES (ver condiciones)",
+    "Comprador de última instancia el primer año (ver condiciones)",
+    "Reporte de desempeño operativo trimestral"
+  ],
+  "protections": [
+    "Contrato de participación en flujo de administración",
+    "Fideicomiso de garantía (condiciones en revisión legal)",
+    "Comprador de última instancia año 1 (condiciones en revisión legal)",
+    "Respaldo en activo inmobiliario subyacente"
+  ],
+  "risks": [
+    "Pérdida parcial o total del capital si la operación del activo subyacente falla.",
+    "Liquidez limitada: no existe mercado secundario activo para este instrumento.",
+    "Riesgo operativo del administrador del activo.",
+    "Riesgo de mercado: variaciones en ocupación hotelera en Los Cabos.",
+    "Riesgo de crédito del emisor (DM Boutique Servicios Turísticos S.A.P.I. de C.V.).",
+    "Riesgo regulatorio: cambios legales pueden afectar la estructura."
+  ],
+  "founderTicket": {
+    "status": "ILUSTRATIVO",
+    "note": "Datos sujetos a confirmación antes de publicación",
+    "contribution": 1000000,
+    "couponYear1_1ticket": 0.14,
+    "couponYear1_2tickets": 0.16,
+    "couponYear1_3tickets": 0.18,
+    "couponDeclinePerYear": 0.02,
+    "conversionDiscount": { "year1": 0.30, "year2": 0.20, "year3": 0.10, "year4plus": 0 },
+    "maxPositions": 20,
+    "membershipDiscount": 0.30
+  }
+}

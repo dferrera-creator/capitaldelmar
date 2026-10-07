@@ -1,0 +1,50 @@
+{
+  "slug": "bravante",
+  "name": "Bravante",
+  "status": "ILUSTRATIVO",
+  "tagline": "Flujo de administración en Guadalajara",
+  "location": "Guadalajara, Jalisco",
+  "assetType": "MANAGEMENT_FLOW",
+  "assetTypeLabel": "Flujo de administración",
+  "what_you_buy": "Participas en los ingresos netos de administración de una propiedad boutique en operación en Guadalajara. No compras un inmueble, compras el derecho a recibir un flujo periódico respaldado por contrato.",
+  "returnRate": 0,
+  "returnRateDisplay": "POR CONFIRMAR",
+  "returnType": "ESTIMATED",
+  "returnNote": "ILUSTRATIVO – cifras de referencia sujetas a validación legal y financiera",
+  "minTicket": 1000000,
+  "minTicketDisplay": "$1,000,000 MXN",
+  "termMonths": 36,
+  "availableSlots": 20,
+  "totalSlots": 20,
+  "benefits": [
+    "Flujo trimestral de administración",
+    "Piso referenciado a CETES (ver condiciones)",
+    "Comprador de última instancia el primer año (ver condiciones)",
+    "Exposición al mercado boutique de Guadalajara",
+    "Reporte de desempeño trimestral"
+  ],
+  "protections": [
+    "Contrato de participación",
+    "Fideicomiso de garantía (condiciones en revisión legal)",
+    "Comprador de última instancia año 1 (condiciones en revisión legal)"
+  ],
+  "risks": [
+    "Pérdida parcial o total del capital si la operación del activo subyacente falla.",
+    "Liquidez limitada: no existe mercado secundario activo para este instrumento.",
+    "Riesgo operativo del operador del activo.",
+    "Riesgo de crédito del emisor (DM Boutique Servicios Turísticos S.A.P.I. de C.V.).",
+    "Riesgo regulatorio: cambios legales pueden afectar la estructura."
+  ],
+  "founderTicket": {
+    "status": "ILUSTRATIVO",
+    "note": "Datos sujetos a confirmación antes de publicación",
+    "contribution": 1000000,
+    "couponYear1_1ticket": 0.14,
+    "couponYear1_2tickets": 0.16,
+    "couponYear1_3tickets": 0.18,
+    "couponDeclinePerYear": 0.02,
+    "conversionDiscount": { "year1": 0.30, "year2": 0.20, "year3": 0.10, "year4plus": 0 },
+    "maxPositions": 20,
+    "membershipDiscount": 0.30
+  }
+}

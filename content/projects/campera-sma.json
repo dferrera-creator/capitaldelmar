@@ -1,0 +1,52 @@
+{
+  "slug": "campera-sma",
+  "name": "Campera Hotel Burbuja",
+  "status": "ILUSTRATIVO",
+  "tagline": "Participación hotelera boutique en San Miguel de Allende",
+  "location": "San Miguel de Allende, Guanajuato",
+  "assetType": "HOTEL_PARTICIPATION",
+  "assetTypeLabel": "Participación hotelera",
+  "what_you_buy": "Participas en las utilidades de un hotel boutique en operación en San Miguel de Allende. No compras el inmueble; adquieres el derecho a recibir un porcentaje de los ingresos netos generados por la operación hotelera, respaldado por contrato.",
+  "returnRate": 0,
+  "returnRateDisplay": "POR CONFIRMAR",
+  "returnType": "ESTIMATED",
+  "returnNote": "ILUSTRATIVO – cifras de referencia sujetas a validación legal y financiera",
+  "minTicket": 1000000,
+  "minTicketDisplay": "$1,000,000 MXN",
+  "termMonths": 36,
+  "availableSlots": 20,
+  "totalSlots": 20,
+  "benefits": [
+    "Flujo trimestral de utilidades hoteleras",
+    "Participación en una marca boutique de alto perfil en SMA",
+    "Piso referenciado a CETES (ver condiciones)",
+    "Comprador de última instancia el primer año (ver condiciones)",
+    "Reporte de desempeño trimestral"
+  ],
+  "protections": [
+    "Contrato de participación en utilidades",
+    "Fideicomiso de garantía (condiciones en revisión legal)",
+    "Comprador de última instancia año 1 (condiciones en revisión legal)",
+    "Auditoría anual de resultados"
+  ],
+  "risks": [
+    "Pérdida parcial o total del capital si la operación hotelera falla.",
+    "Liquidez limitada: no existe mercado secundario activo para este instrumento.",
+    "Riesgo de temporada baja y eventos externos (pandemias, desastres naturales).",
+    "Riesgo operativo del operador hotelero.",
+    "Riesgo de crédito del emisor (DM Boutique Servicios Turísticos S.A.P.I. de C.V.).",
+    "Riesgo de concentración en el sector hospitalidad."
+  ],
+  "founderTicket": {
+    "status": "ILUSTRATIVO",
+    "note": "Datos sujetos a confirmación antes de publicación",
+    "contribution": 1000000,
+    "couponYear1_1ticket": 0.14,
+    "couponYear1_2tickets": 0.16,
+    "couponYear1_3tickets": 0.18,
+    "couponDeclinePerYear": 0.02,
+    "conversionDiscount": { "year1": 0.30, "year2": 0.20, "year3": 0.10, "year4plus": 0 },
+    "maxPositions": 20,
+    "membershipDiscount": 0.30
+  }
+}

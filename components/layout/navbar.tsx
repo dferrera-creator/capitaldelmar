@@ -31,10 +31,10 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Close mobile menu on route change
-  React.useEffect(() => {
-    setMobileOpen(false)
-  }, [pathname])
+  // Close mobile menu on route change — disable rule: this is an intentional
+  // "sync with external state" (the router), not a cascading render.
+  // eslint-disable-next-line react-hooks/set-state-in-effect
+  React.useEffect(() => { setMobileOpen(false) }, [pathname])
 
   return (
     <>

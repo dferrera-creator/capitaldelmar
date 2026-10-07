@@ -36,7 +36,7 @@ export function ValuationPreview() {
           </h2>
         </div>
         <p className="mb-2 text-ink-500">
-          Usamos un análisis tipo "football field" con múltiples metodologías de valuación para
+          Usamos un análisis tipo &ldquo;football field&rdquo; con múltiples metodologías de valuación para
           determinar el rango de valor del activo. Ejemplo con Bravante Los Cabos.
         </p>
         <p className="mb-8 inline-block rounded-full bg-accent-50 px-3 py-1 text-xs font-medium text-accent-800">

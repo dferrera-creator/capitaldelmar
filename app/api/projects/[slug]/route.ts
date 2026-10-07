@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getProject } from '@/lib/projects'
 
-export const revalidate = 60
 
 export async function GET(
   _req: NextRequest,

@@ -13,18 +13,18 @@ export function CookieBanner() {
   const [visible, setVisible] = React.useState(false)
 
   React.useEffect(() => {
+    let timer: ReturnType<typeof setTimeout>
     try {
       const stored = localStorage.getItem(CONSENT_KEY) as ConsentValue
       if (!stored) {
-        // Show banner after a short delay so it doesn't flash on initial render
-        const timer = setTimeout(() => setVisible(true), 800)
-        return () => clearTimeout(timer)
+        timer = setTimeout(() => setVisible(true), 800)
+      } else {
+        timer = setTimeout(() => setConsent(stored), 0)
       }
-      setConsent(stored)
     } catch {
-      // localStorage unavailable (private mode, etc.)
-      setVisible(true)
+      timer = setTimeout(() => setVisible(true), 0)
     }
+    return () => clearTimeout(timer)
   }, [])
 
   function handleAcceptAll() {

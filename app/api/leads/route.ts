@@ -85,7 +85,7 @@ export async function POST(req: NextRequest) {
     // Save to DB
     try {
       const { prisma } = await import('@/lib/prisma')
-      const lead = await (prisma as any).lead?.create?.({
+      const lead = await prisma.lead.create({
         data: {
           name: data.name,
           email: data.email,
@@ -93,7 +93,7 @@ export async function POST(req: NextRequest) {
           projectSlug: data.projectSlug ?? null,
           amountApprox: data.amountApprox ?? null,
           termMonths: data.termMonths ?? null,
-          leadScore,
+          score: leadScore,
           source: 'website',
         },
       })

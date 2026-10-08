@@ -15,6 +15,8 @@ import {
   FileText,
   ArrowRight,
 } from 'lucide-react'
+import { ProjectNav } from '@/components/projects/project-nav'
+import { EditableField, EditableListItem } from '@/components/ui/editable-field'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -126,23 +128,34 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           </div>
         </div>
 
+        {/* Section nav */}
+        <ProjectNav />
+
         {/* Content */}
         <div className="mx-auto max-w-4xl px-4 py-16 space-y-16">
           {/* Qué compras */}
-          <section>
+          <section id="descripcion">
             <h2 className="mb-4 font-serif text-2xl font-semibold text-ink-900">
-              Qué compras
+              Descripción
             </h2>
-            <p className="leading-relaxed text-ink-600">{project.what_you_buy}</p>
-            <div className="mt-4 rounded-lg bg-sand-50 border border-sand-300 px-4 py-3">
-              <p className="text-xs text-ink-500">
-                (ILUSTRATIVO) — Descripción sujeta a definición contractual final.
-              </p>
-            </div>
+            <EditableField
+              slug={project.slug}
+              field="what_you_buy"
+              value={project.what_you_buy}
+              multiline
+              className="leading-relaxed text-ink-600"
+            />
+            {project.status === 'ILUSTRATIVO' && (
+              <div className="mt-4 rounded-lg bg-sand-50 border border-sand-300 px-4 py-3">
+                <p className="text-xs text-ink-500">
+                  (ILUSTRATIVO) — Descripción sujeta a definición contractual final.
+                </p>
+              </div>
+            )}
           </section>
 
           {/* Qué te protege */}
-          <section>
+          <section id="protecciones">
             <h2 className="mb-4 font-serif text-2xl font-semibold text-ink-900">
               Qué te protege
             </h2>
@@ -150,7 +163,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               {project.protections.map((p, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                  <span className="text-ink-700">{p}</span>
+                  <EditableListItem
+                    slug={project.slug}
+                    field={`protections.${i}`}
+                    value={p}
+                    className="text-ink-700"
+                  />
                 </li>
               ))}
             </ul>
@@ -178,7 +196,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
           {/* Modelo financiero */}
           {financials && (
-            <section>
+            <section id="financiero">
               <h2 className="mb-4 font-serif text-2xl font-semibold text-ink-900">
                 Modelo financiero
               </h2>
@@ -190,7 +208,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           )}
 
           {/* Riesgos */}
-          <section>
+          <section id="riesgos">
             <h2 className="mb-2 font-serif text-2xl font-semibold text-ink-900">
               Riesgos de este proyecto
             </h2>
@@ -205,7 +223,12 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   className="flex items-start gap-3 rounded-lg border border-red-100 bg-red-50/40 px-4 py-3"
                 >
                   <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-risk" />
-                  <span className="text-sm text-ink-700">{risk}</span>
+                  <EditableListItem
+                    slug={project.slug}
+                    field={`risks.${i}`}
+                    value={risk}
+                    className="text-sm text-ink-700"
+                  />
                 </li>
               ))}
             </ul>
@@ -218,7 +241,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           </section>
 
           {/* Cómo funciona */}
-          <section>
+          <section id="como-funciona">
             <h2 className="mb-4 font-serif text-2xl font-semibold text-ink-900">
               Cómo funciona
             </h2>
@@ -243,7 +266,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           </section>
 
           {/* Documentos */}
-          <section>
+          <section id="documentos">
             <h2 className="mb-4 font-serif text-2xl font-semibold text-ink-900">
               Documentos del proyecto
             </h2>

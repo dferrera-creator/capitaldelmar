@@ -14,6 +14,13 @@ export function formatCurrency(amount: number, currency = 'MXN'): string {
   }).format(amount)
 }
 
+export function formatCompact(n: number): string {
+  const abs = Math.abs(n)
+  if (abs >= 1_000_000) return `$${(n / 1_000_000).toFixed(1)}M`
+  if (abs >= 1_000) return `$${(n / 1_000).toFixed(0)}K`
+  return `$${n.toFixed(0)}`
+}
+
 export function formatPercent(value: number, decimals = 2): string {
   return `${value.toFixed(decimals)}%`
 }

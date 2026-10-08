@@ -1,6 +1,6 @@
 'use client'
 
-import { cn, formatCurrency, formatPercent } from '@/lib/utils'
+import { cn, formatCompact, formatCurrency, formatPercent } from '@/lib/utils'
 import type { FinancialKPIs } from '@/lib/financials'
 
 interface KPITileProps {
@@ -13,7 +13,7 @@ interface KPITileProps {
 function formatValue(value: number, format: KPITileProps['format']): string {
   switch (format) {
     case 'currency':
-      return formatCurrency(value)
+      return formatCompact(value)
     case 'percent':
       return formatPercent(value)
     case 'multiple':
@@ -27,13 +27,15 @@ function KPITile({ label, value, format, highlight }: KPITileProps) {
   const isNull = value === null || value === undefined
   const isRiskValue =
     highlight === 'risk' && !isNull && (format === 'ratio' ? value < 1.0 : value < 0)
+  const fullLabel = !isNull && format === 'currency' ? formatCurrency(value as number) : undefined
 
   return (
-    <div className="rounded-xl border border-ink-100 bg-white p-4">
-      <p className="text-xs text-ink-500 leading-tight mb-1.5">{label}</p>
+    <div className="rounded-xl border border-ink-100 bg-white p-3 min-w-0">
+      <p className="text-xs text-ink-500 leading-tight mb-1.5 truncate">{label}</p>
       <p
+        title={fullLabel}
         className={cn(
-          'font-serif text-lg font-bold leading-tight',
+          'font-serif text-base font-bold leading-tight truncate',
           isNull && 'text-ink-300',
           !isNull && highlight === 'accent' && 'text-accent',
           !isNull && isRiskValue && 'text-risk',
@@ -74,7 +76,7 @@ const KPI_DEFS: Array<{
 
 export function KPIRow({ kpis }: KPIRowProps) {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
       {KPI_DEFS.map((def) => (
         <KPITile
           key={def.key}

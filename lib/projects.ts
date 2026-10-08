@@ -4,7 +4,7 @@ import path from 'path'
 export interface ProjectData {
   slug: string
   name: string
-  status: 'OPEN' | 'COMING_SOON' | 'CLOSED' | 'ILUSTRATIVO'
+  status: 'OPEN' | 'COMING_SOON' | 'CLOSED' | 'ILUSTRATIVO' | 'ESTIMADO'
   tagline: string
   location: string
   assetType: string

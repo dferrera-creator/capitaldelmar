@@ -19,7 +19,9 @@ export default function ProyectosPage({
   // We resolve statically; filter is client-side handled via tabs
   const openProjects = allProjects.filter((p) => p.status === 'OPEN')
   const comingSoonProjects = allProjects.filter((p) => p.status === 'COMING_SOON')
-  const ilustrativoProjects = allProjects.filter((p) => p.status === 'ILUSTRATIVO')
+  const ilustrativoProjects = allProjects.filter(
+    (p) => p.status === 'ILUSTRATIVO' || p.status === 'ESTIMADO',
+  )
 
   return (
     <>

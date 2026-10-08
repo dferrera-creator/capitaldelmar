@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { getProject, getProjectSlugs } from '@/lib/projects'
 import { getFinancials, getValuationData } from '@/lib/financials'
 import { Button } from '@/components/ui/button'
@@ -68,8 +69,19 @@ export default async function ProjectDetailPage({ params }: PageProps) {
     <>
       <div className="min-h-screen bg-white">
         {/* Hero */}
-        <div className="bg-ink px-4 py-20 text-center">
-          <div className="mx-auto max-w-3xl">
+        <div className="relative overflow-hidden bg-ink px-4 py-20 text-center">
+          {project.coverImage && (
+            <Image
+              src={project.coverImage}
+              alt={project.name}
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
+            />
+          )}
+          <div className="absolute inset-0 bg-ink/75" />
+          <div className="relative mx-auto max-w-3xl">
             <div className="mb-3 flex flex-wrap items-center justify-center gap-2 text-sm text-ink-400">
               <span className="flex items-center gap-1">
                 <MapPin className="h-3.5 w-3.5" />
@@ -136,7 +148,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {/* Qué compras */}
           <section id="descripcion">
             <h2 className="mb-4 font-serif text-2xl font-semibold text-ink-900">
-              Descripción
+              Qué es este proyecto
             </h2>
             <EditableField
               slug={project.slug}
@@ -157,7 +169,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {/* Qué te protege */}
           <section id="protecciones">
             <h2 className="mb-4 font-serif text-2xl font-semibold text-ink-900">
-              Qué te protege
+              Cómo está protegida tu inversión
             </h2>
             <ul className="space-y-3">
               {project.protections.map((p, i) => (
@@ -198,7 +210,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {financials && (
             <section id="financiero">
               <h2 className="mb-4 font-serif text-2xl font-semibold text-ink-900">
-                Modelo financiero
+                Números del proyecto
               </h2>
               <FinancialPanel
                 financials={financials}
@@ -210,7 +222,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {/* Riesgos */}
           <section id="riesgos">
             <h2 className="mb-2 font-serif text-2xl font-semibold text-ink-900">
-              Riesgos de este proyecto
+              Qué puede salir mal
             </h2>
             <p className="mb-4 flex items-center gap-2 text-sm text-risk">
               <AlertTriangle className="h-4 w-4" />
@@ -243,14 +255,13 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {/* Cómo funciona */}
           <section id="como-funciona">
             <h2 className="mb-4 font-serif text-2xl font-semibold text-ink-900">
-              Cómo funciona
+              Pasos para entrar
             </h2>
             <ol className="space-y-4">
               {[
-                { step: '1', title: 'Agendar llamada', desc: 'Conversación de 30 min con el equipo de capital para conocer el proyecto.' },
-                { step: '2', title: 'Carta de reserva', desc: '7 días para reservar tu posición mientras revisas la documentación.' },
-                { step: '3', title: 'Due diligence', desc: 'Acceso al data room: contrato, valuación, escrituras y modelo financiero.' },
-                { step: '4', title: 'Firma y transferencia', desc: '5 días hábiles para formalizar. Firma del contrato y transferencia al fideicomiso.' },
+                { step: '1', title: 'Llámanos', desc: '30 minutos con el equipo. Te explicamos el proyecto y resolvemos tus dudas.' },
+                { step: '2', title: 'Reserva tu lugar', desc: 'Tienes 7 días para revisar los documentos y decidir si entras.' },
+                { step: '3', title: 'Firma y transfiere', desc: 'Firmamos el contrato y mandas la transferencia al fideicomiso. Listo.' },
               ].map((item) => (
                 <li key={item.step} className="flex gap-4">
                   <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-ink-900">
@@ -268,14 +279,13 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           {/* Documentos */}
           <section id="documentos">
             <h2 className="mb-4 font-serif text-2xl font-semibold text-ink-900">
-              Documentos del proyecto
+              Documentos
             </h2>
             <div className="rounded-2xl border border-dashed border-ink-200 bg-sand-50 p-8 text-center">
               <Lock className="mx-auto mb-3 h-8 w-8 text-ink-300" />
-              <p className="font-medium text-ink-700">Acceso restringido</p>
+              <p className="font-medium text-ink-700">Acceso por invitación</p>
               <p className="mt-1 text-sm text-ink-500">
-                Los documentos del data room están disponibles para inversionistas calificados que
-                hayan completado el proceso de reserva y firmado el NDA.
+                Contrato, avalúo, escrituras y modelo financiero disponibles después de la llamada inicial.
               </p>
               <Button asChild className="mt-4">
                 <Link href="/agendar">

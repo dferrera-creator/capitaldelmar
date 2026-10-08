@@ -10,6 +10,8 @@ export interface ProjectData {
   assetType: string
   assetTypeLabel: string
   displayOrder?: number
+  coverImage?: string
+  active?: boolean
   what_you_buy: string
   returnRate: number
   returnRateDisplay: string

@@ -2,11 +2,13 @@
   "slug": "habitat-azul",
   "name": "Hábitat Azul",
   "status": "ILUSTRATIVO",
-  "tagline": "Flujo de administración en Centro Histórico de Guadalajara",
+  "coverImage": "https://images.unsplash.com/photo-1464983953574-0892a716854b?w=800&h=500&fit=crop&q=80",
+  "active": true,
+  "tagline": "Recibe ingresos trimestrales de una propiedad boutique en el Centro Histórico de Guadalajara",
   "location": "Centro Histórico, Guadalajara",
   "assetType": "MANAGEMENT_FLOW",
   "assetTypeLabel": "Flujo de administración",
-  "what_you_buy": "Participas en los ingresos netos de administración de una propiedad boutique patrimonial en el Centro Histórico de Guadalajara. No compras el inmueble; adquieres el derecho a recibir un flujo periódico respaldado por contrato, con exposición a una zona de alta demanda turística y renovación urbana.",
+  "what_you_buy": "Entras como socio en los ingresos de una propiedad boutique en el Centro Histórico de Guadalajara — una zona de alta demanda turística. No compras el inmueble; recibes pagos trimestrales respaldados por contrato.",
   "returnRate": 0,
   "returnRateDisplay": "POR CONFIRMAR",
   "returnType": "ESTIMATED",
@@ -17,25 +19,20 @@
   "availableSlots": 15,
   "totalSlots": 15,
   "benefits": [
-    "Flujo trimestral en propiedad boutique patrimonial",
-    "Ubicación premium en Centro Histórico con alta demanda turística",
-    "Piso referenciado a CETES (ver condiciones)",
-    "Comprador de última instancia el primer año (ver condiciones)",
+    "Pagos trimestrales en una de las zonas con más demanda turística de Guadalajara",
+    "Piso de rendimiento referenciado a CETES — ver condiciones",
+    "Comprador de última instancia en el año 1 — ver condiciones",
     "Potencial de plusvalía en zona de renovación urbana"
   ],
   "protections": [
-    "Contrato de participación en flujo de administración",
-    "Fideicomiso de garantía (condiciones en revisión legal)",
-    "Comprador de última instancia año 1 (condiciones en revisión legal)",
-    "Respaldo en activo inmobiliario patrimonial"
+    "Contrato de participación firmado ante notario",
+    "Fideicomiso de garantía — condiciones en revisión legal",
+    "Comprador de última instancia en el año 1 — condiciones en revisión legal"
   ],
   "risks": [
-    "Pérdida parcial o total del capital si la operación del activo subyacente falla.",
-    "Liquidez limitada: no existe mercado secundario activo para este instrumento.",
-    "Riesgo operativo del administrador del activo.",
-    "Riesgo patrimonial: restricciones legales en inmuebles históricos.",
-    "Riesgo de crédito del emisor (DM Boutique Servicios Turísticos S.A.P.I. de C.V.).",
-    "Riesgo regulatorio: normas de protección del patrimonio histórico."
+    "Si la propiedad no genera los ingresos esperados, tu rendimiento baja.",
+    "No hay mercado secundario: salir antes del plazo no es sencillo.",
+    "Los inmuebles históricos tienen restricciones legales que pueden complicar la operación."
   ],
   "founderTicket": {
     "status": "ILUSTRATIVO",

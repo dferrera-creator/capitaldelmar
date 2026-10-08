@@ -1,6 +1,8 @@
 {
   "slug": "la-playita",
   "name": "La Playita Beach Club",
+  "coverImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=500&fit=crop&q=80",
+  "active": false,
   "status": "ILUSTRATIVO",
   "tagline": "Acciones de negocio en beach club boutique",
   "location": "San Miguel de Allende, Guanajuato",

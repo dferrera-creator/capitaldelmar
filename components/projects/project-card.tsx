@@ -1,8 +1,8 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { MapPin, Clock, CheckCircle2, Lock } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Badge } from '@/components/ui/badge'
-import { cn, formatCurrency } from '@/lib/utils'
+import { cn } from '@/lib/utils'
 import type { ProjectData } from '@/lib/projects'
 
 interface ProjectCardProps {
@@ -14,6 +14,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
   const isConfirmed = project.returnRate > 0
   const slotsLeft = project.availableSlots
   const hasSlotInfo = slotsLeft < project.totalSlots
+  const isInactive = project.active === false
 
   const returnTypeLabel =
     project.returnType === 'FIXED'
@@ -22,6 +23,14 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
         ? 'Histórico'
         : 'Estimado'
 
+  const statusBadge = () => {
+    if (project.status === 'ILUSTRATIVO') return { label: 'En estructuración', className: 'bg-accent text-ink-900' }
+    if (project.status === 'ESTIMADO') return { label: 'Estimado', className: 'bg-accent text-ink-900' }
+    if (project.status === 'COMING_SOON') return { label: 'Próximamente', className: 'bg-ink-700 text-sand' }
+    return null
+  }
+  const badge = statusBadge()
+
   return (
     <article
       className={cn(
@@ -29,19 +38,33 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
         className,
       )}
     >
-      {/* Image placeholder */}
-      <div className="relative flex h-48 items-end bg-gradient-to-br from-ink-800 to-ink-600 px-5 pb-4">
-        {project.status === 'ILUSTRATIVO' && (
-          <span className="absolute right-3 top-3 rounded-full bg-accent px-2.5 py-0.5 text-xs font-bold text-ink-900">
-            ILUSTRATIVO
+      {/* Image area */}
+      <div className="relative h-56 overflow-hidden">
+        {project.coverImage ? (
+          <Image
+            src={project.coverImage}
+            alt={project.name}
+            fill
+            className={cn('object-cover transition-transform duration-500 hover:scale-105', isInactive && 'grayscale')}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+        ) : (
+          <div className={cn('h-full bg-gradient-to-br from-ink-800 to-ink-600', isInactive && 'opacity-60')} />
+        )}
+        {/* Overlay for text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-t from-ink-900/80 via-ink-900/20 to-transparent" />
+
+        {/* Status badge */}
+        {badge && (
+          <span className={cn('absolute right-3 top-3 rounded-full px-2.5 py-0.5 text-xs font-bold', badge.className)}>
+            {badge.label}
           </span>
         )}
-        {project.status === 'COMING_SOON' && (
-          <span className="absolute right-3 top-3 rounded-full bg-ink-600 px-2.5 py-0.5 text-xs font-medium text-sand">
-            Próximamente
-          </span>
-        )}
-        <p className="font-serif text-xl font-semibold text-sand">{project.name}</p>
+
+        {/* Project name over image */}
+        <p className="absolute bottom-4 left-5 font-serif text-xl font-semibold text-white drop-shadow">
+          {project.name}
+        </p>
       </div>
 
       <div className="flex flex-1 flex-col p-5">
@@ -66,10 +89,10 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
               <span className="ml-2 text-sm text-ink-500">{returnTypeLabel}</span>
             </>
           ) : (
-            <span className="font-serif text-2xl font-semibold text-ink-400">POR CONFIRMAR</span>
+            <span className="font-serif text-2xl font-semibold text-ink-400">Por confirmar</span>
           )}
           {isConfirmed && (
-            <p className="mt-0.5 text-xs text-ink-400">(ILUSTRATIVO — ver condiciones)</p>
+            <p className="mt-0.5 text-xs text-ink-400">(estimado — ver condiciones)</p>
           )}
         </div>
 
@@ -104,7 +127,6 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
         )}
 
         <div className="mt-4 border-t border-ink-50 pt-4">
-          {/* Fideicomiso note */}
           <p className="mb-3 text-xs text-ink-400">
             <Lock className="mr-1 inline h-3 w-3" />
             Respaldado por contrato y fideicomiso{' '}
@@ -113,7 +135,6 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
             </Link>
           </p>
 
-          {/* CTA */}
           <Button asChild className="w-full" disabled={project.status === 'COMING_SOON'}>
             <Link href={`/proyectos/${project.slug}`}>
               {project.status === 'COMING_SOON' ? 'Próximamente' : 'Ver proyecto'}

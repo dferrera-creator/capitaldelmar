@@ -1,6 +1,8 @@
 {
   "slug": "mar-de-cortez",
   "name": "Mar de Cortez La Paz",
+  "coverImage": "https://images.unsplash.com/photo-1455156218388-5e61b526818b?w=800&h=500&fit=crop&q=80",
+  "active": false,
   "status": "COMING_SOON",
   "tagline": "Eco-resort en la Reserva de la Biosfera de La Paz",
   "location": "La Paz, BCS",

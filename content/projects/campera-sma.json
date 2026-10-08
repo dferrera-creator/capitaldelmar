@@ -1,6 +1,8 @@
 {
   "slug": "campera-sma",
   "name": "Campera Hotel Burbuja",
+  "coverImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop&q=80",
+  "active": false,
   "status": "ILUSTRATIVO",
   "tagline": "Participación hotelera boutique en San Miguel de Allende",
   "location": "San Miguel de Allende, Guanajuato",

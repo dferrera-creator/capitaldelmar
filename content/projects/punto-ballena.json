@@ -1,6 +1,8 @@
 {
   "slug": "punto-ballena",
   "name": "Punto Ballena Tulum",
+  "coverImage": "https://images.unsplash.com/photo-1440778303588-435521a205bc?w=800&h=500&fit=crop&q=80",
+  "active": false,
   "status": "OPEN",
   "tagline": "Suites ecoboutique en la Riviera Maya",
   "location": "Tulum, Quintana Roo",

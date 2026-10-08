@@ -2,6 +2,8 @@
   "slug": "canadian-resorts",
   "name": "Canadian Resorts",
   "status": "ESTIMADO",
+  "coverImage": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=500&fit=crop&q=80",
+  "active": true,
   "tagline": "Hotel boutique de 22 suites en Nuevo Vallarta — 40% bajo precio de lista",
   "location": "Bucerías, Nuevo Vallarta, Nayarit",
   "assetType": "HOTEL",
@@ -30,11 +32,10 @@
   "startDate": "2027-01-01",
   "startDateStatus": "por_confirmar",
   "benefits": [
-    "Se compra 40% abajo del precio de lista de $84.0 M (precio: $50.0 M)",
-    "Genera efectivo desde el año 1 — sin período de espera de construcción",
-    "Sin hipoteca: todo es capital propio, sin riesgo de deuda",
-    "22 suites; 18 operan como renta de corta estancia en Airbnb, VRBO y Booking",
-    "Inmueble estimado en $80.0 M — Por confirmar con avalúo"
+    "Se compra 40% más barato que su precio de lista — entras con margen desde el día uno",
+    "Genera efectivo desde el año 1: el hotel ya opera hoy con $7.6M en ingresos",
+    "Sin hipoteca — no hay deuda ni riesgo de llamada de margen",
+    "18 de las 22 suites se rentan en Airbnb, VRBO y Booking con precios dinámicos"
   ],
   "protections": [
     "Compra 40% abajo del precio de lista — margen de seguridad desde la entrada",

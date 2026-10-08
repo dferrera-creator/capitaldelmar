@@ -2,11 +2,13 @@
   "slug": "monte-rocella",
   "name": "Monte Rocella",
   "status": "ILUSTRATIVO",
-  "tagline": "Flujo de administración en Los Cabos",
+  "coverImage": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&h=500&fit=crop&q=80",
+  "active": true,
+  "tagline": "Recibe ingresos trimestrales de una propiedad premium en Los Cabos",
   "location": "El Tezal, Los Cabos",
   "assetType": "MANAGEMENT_FLOW",
   "assetTypeLabel": "Flujo de administración",
-  "what_you_buy": "Participas en los ingresos netos de administración de una propiedad premium en El Tezal, Los Cabos. No compras el inmueble; adquieres el derecho a recibir un flujo periódico de la administración del activo, respaldado por contrato y fideicomiso.",
+  "what_you_buy": "Entras como socio en los ingresos de una propiedad premium en El Tezal, Los Cabos. No compras el inmueble — recibes pagos trimestrales de lo que genera la propiedad. Tu participación está respaldada por contrato y fideicomiso.",
   "returnRate": 0,
   "returnRateDisplay": "POR CONFIRMAR",
   "returnType": "ESTIMATED",
@@ -17,25 +19,20 @@
   "availableSlots": 20,
   "totalSlots": 20,
   "benefits": [
-    "Flujo trimestral de administración en zona de alta plusvalía",
-    "Exposición al mercado premium de Los Cabos",
-    "Piso referenciado a CETES (ver condiciones)",
-    "Comprador de última instancia el primer año (ver condiciones)",
-    "Reporte de desempeño operativo trimestral"
+    "Pagos trimestrales en una zona de alta plusvalía: El Tezal, Los Cabos",
+    "Piso de rendimiento referenciado a CETES — ver condiciones",
+    "Comprador de última instancia en el año 1 — ver condiciones",
+    "Reporte de desempeño cada trimestre"
   ],
   "protections": [
-    "Contrato de participación en flujo de administración",
-    "Fideicomiso de garantía (condiciones en revisión legal)",
-    "Comprador de última instancia año 1 (condiciones en revisión legal)",
-    "Respaldo en activo inmobiliario subyacente"
+    "Contrato de participación firmado ante notario",
+    "Fideicomiso de garantía — condiciones en revisión legal",
+    "Comprador de última instancia en el año 1 — condiciones en revisión legal"
   ],
   "risks": [
-    "Pérdida parcial o total del capital si la operación del activo subyacente falla.",
-    "Liquidez limitada: no existe mercado secundario activo para este instrumento.",
-    "Riesgo operativo del administrador del activo.",
-    "Riesgo de mercado: variaciones en ocupación hotelera en Los Cabos.",
-    "Riesgo de crédito del emisor (DM Boutique Servicios Turísticos S.A.P.I. de C.V.).",
-    "Riesgo regulatorio: cambios legales pueden afectar la estructura."
+    "Si la propiedad no genera los ingresos esperados, tu rendimiento baja.",
+    "No hay mercado secundario: salir antes del plazo no es sencillo.",
+    "La ocupación hotelera en Los Cabos puede bajar por temporada o factores externos."
   ],
   "founderTicket": {
     "status": "ILUSTRATIVO",

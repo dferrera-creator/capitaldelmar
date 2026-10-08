@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { AlertTriangle } from 'lucide-react'
@@ -24,10 +25,19 @@ export function HeroSection({ variant = 'A' }: HeroSectionProps) {
         'relative flex min-h-screen flex-col items-center justify-center bg-ink px-4 py-24 text-center',
       )}
     >
-      {/* Subtle gradient overlay */}
+      {/* Background image */}
+      <Image
+        src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&h=900&fit=crop&q=80"
+        alt=""
+        fill
+        priority
+        className="object-cover"
+        sizes="100vw"
+      />
+      {/* Dark overlay */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-ink-900 via-ink to-ink-800 opacity-80"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-br from-ink-900/90 via-ink/80 to-ink-800/90"
       />
 
       <div className="relative z-10 mx-auto max-w-4xl space-y-8">

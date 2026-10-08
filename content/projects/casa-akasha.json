@@ -1,6 +1,8 @@
 {
   "slug": "casa-akasha",
   "name": "Casa Akasha Mazatlán",
+  "coverImage": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=500&fit=crop&q=80",
+  "active": false,
   "status": "OPEN",
   "tagline": "Boutique colonial en el centro histórico de Mazatlán",
   "location": "Mazatlán, Sinaloa",

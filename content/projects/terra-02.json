@@ -1,6 +1,8 @@
 {
   "slug": "terra-02",
   "name": "Terra 02 Los Cabos",
+  "coverImage": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&h=500&fit=crop&q=80",
+  "active": false,
   "status": "OPEN",
   "tagline": "Lotes residenciales de lujo en corredor turístico",
   "location": "Corridor Los Cabos, BCS",
